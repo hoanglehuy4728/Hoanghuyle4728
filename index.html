@@ -7,210 +7,128 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap');
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
   :root {
-    --bg: #000; --surface: #111; --card: #1a1a1a;
-    --border: #2a2a2a; --accent: #4f8ef7; --accent2: #7c5af0;
-    --text: #f0f0f0; --muted: #666; --success: #34d399; --radius: 24px;
+    --bg: #000; --surface: #111; --card: #1c1c1e;
+    --border: #2c2c2e; --accent: #4f8ef7; --accent2: #7c5af0;
+    --text: #f5f5f7; --muted: #888; --sub: #aaa;
+    --success: #30d158; --radius: 24px;
   }
-  html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; }
+  .light {
+    --bg: #f2f2f7; --surface: #fff; --card: #fff;
+    --border: #d1d1d6; --accent: #007aff; --accent2: #5856d6;
+    --text: #1c1c1e; --muted: #8e8e93; --sub: #666;
+    --success: #34c759;
+  }
+
+  html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; transition: background .3s, color .3s; }
   body { display: flex; flex-direction: column; }
 
   /* Header */
-  header {
-    flex-shrink: 0; padding: 14px 20px;
-    background: var(--surface); border-bottom: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  header h1 {
-    font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700;
-    background: linear-gradient(120deg, var(--accent), var(--accent2));
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-  }
+  header { flex-shrink: 0; padding: 14px 18px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; transition: background .3s, border-color .3s; }
+  header h1 { font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; background: linear-gradient(120deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
   #menu-btn { background: none; border: none; cursor: pointer; display: flex; flex-direction: column; gap: 5px; padding: 6px; -webkit-tap-highlight-color: transparent; }
-  #menu-btn span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; }
+  #menu-btn span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: background .3s; }
+  #theme-btn { background: none; border: none; cursor: pointer; font-size: 1.3rem; padding: 4px 6px; -webkit-tap-highlight-color: transparent; line-height: 1; }
 
   /* Drawer */
-  #drawer-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.7); z-index: 100; opacity: 0; pointer-events: none; transition: opacity .3s; }
+  #drawer-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.6); z-index: 100; opacity: 0; pointer-events: none; transition: opacity .3s; }
   #drawer-overlay.open { opacity: 1; pointer-events: all; }
-  #drawer { position: fixed; top: 0; left: 0; bottom: 0; width: 75vw; max-width: 300px; background: var(--surface); border-right: 1px solid var(--border); z-index: 101; transform: translateX(-100%); transition: transform .3s cubic-bezier(.4,0,.2,1); overflow-y: auto; padding: 24px 0; }
+  #drawer { position: fixed; top: 0; left: 0; bottom: 0; width: 78vw; max-width: 300px; background: var(--surface); border-right: 1px solid var(--border); z-index: 101; transform: translateX(-100%); transition: transform .3s cubic-bezier(.4,0,.2,1), background .3s; overflow-y: auto; padding: 24px 0 40px; }
   #drawer.open { transform: translateX(0); }
-  #drawer h2 { font-size: 0.7rem; font-weight: 600; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; padding: 0 20px 14px; }
-  .drawer-tab { display: block; width: 100%; padding: 14px 20px; font-size: 0.92rem; font-weight: 500; color: var(--muted); border: none; background: none; cursor: pointer; text-align: left; font-family: 'Inter', sans-serif; border-left: 3px solid transparent; transition: color .2s, background .2s, border-color .2s; -webkit-tap-highlight-color: transparent; }
+  #drawer h2 { font-size: 0.7rem; font-weight: 600; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; padding: 0 18px 10px; }
+  .drawer-group-title { font-size: 0.72rem; font-weight: 600; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; padding: 14px 18px 4px; }
+  .drawer-tab { display: block; width: 100%; padding: 12px 18px; font-size: 0.88rem; font-weight: 500; color: var(--muted); border: none; background: none; cursor: pointer; text-align: left; font-family: 'Inter', sans-serif; border-left: 3px solid transparent; transition: color .2s, background .2s, border-color .2s; -webkit-tap-highlight-color: transparent; }
   .drawer-tab.active { color: var(--accent); border-left-color: var(--accent); background: rgba(79,142,247,.08); }
 
   /* Section bar */
-  #section-bar { flex-shrink: 0; padding: 8px 20px; background: var(--surface); border-bottom: 1px solid var(--border); }
-  #section-title { font-size: 0.78rem; color: var(--muted); }
+  #section-bar { flex-shrink: 0; padding: 7px 18px; background: var(--surface); border-bottom: 1px solid var(--border); transition: background .3s, border-color .3s; }
+  #section-title { font-size: 0.76rem; color: var(--muted); }
 
   /* App */
   #app { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+  #middle { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 12px 14px 8px; gap: 10px; min-height: 0; }
 
-  /* Middle */
-  #middle { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 14px 16px 10px; gap: 12px; min-height: 0; }
-
-  #counter { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.06em; }
-
-  #progress-wrap { width: 100%; max-width: 500px; height: 2px; background: var(--border); border-radius: 99px; overflow: hidden; }
+  #counter { font-size: 0.76rem; color: var(--muted); letter-spacing: 0.06em; }
+  #progress-wrap { width: 100%; max-width: 520px; height: 3px; background: var(--border); border-radius: 99px; overflow: hidden; }
   #progress-bar { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 99px; transition: width .4s ease; }
 
   /* Card viewport */
-  #card-viewport {
-    width: 100%; max-width: 500px;
-    flex: 1; min-height: 0;
-    position: relative; overflow: hidden;
-    border-radius: var(--radius);
-  }
+  #card-viewport { width: 100%; max-width: 520px; flex: 1; min-height: 0; position: relative; overflow: hidden; border-radius: var(--radius); }
+  #card-track { position: absolute; top: 0; bottom: 0; left: -100%; width: 300%; display: flex; will-change: transform; }
+  #card-track.animating { transition: transform .36s cubic-bezier(.4,0,.2,1); }
+  .card-slot { flex-shrink: 0; width: 33.333%; height: 100%; padding: 0 5px; }
 
-  /* Track: 3 slots — prev | current | next */
-  #card-track {
-    position: absolute; top: 0; bottom: 0;
-    left: -100%; width: 300%;
-    display: flex;
-    will-change: transform;
-  }
-  #card-track.animating {
-    transition: transform .38s cubic-bezier(.4,0,.2,1);
-  }
-
-  .card-slot { flex-shrink: 0; width: 33.333%; height: 100%; padding: 0 6px; }
-
-  .card {
-    width: 100%; height: 100%; position: relative;
-    transform-style: preserve-3d;
-    transition: transform .45s cubic-bezier(.4,0,.2,1);
-    cursor: pointer;
-  }
+  .card { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transition: transform .45s cubic-bezier(.4,0,.2,1); cursor: pointer; }
   .card.flipped { transform: rotateY(180deg); }
 
-  .card-face {
-    position: absolute; inset: 0;
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: var(--radius); backface-visibility: hidden;
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    gap: 10px; padding: 28px 24px;
-  }
-  .card-face::before {
-    content: ''; position: absolute; inset: 0; border-radius: var(--radius);
-    background: radial-gradient(ellipse at 30% 20%, rgba(79,142,247,.06) 0%, transparent 60%);
-    pointer-events: none;
-  }
-  .card-front .word {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(2rem, 9vw, 3.2rem);
-    font-weight: 700; color: var(--text);
-    letter-spacing: -0.02em; text-align: center; line-height: 1.1;
-  }
-  .card-front .hint { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
-  .card-back { transform: rotateY(180deg); background: #0d1520; }
-  .card-back .translation { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.3rem, 5vw, 1.9rem); font-weight: 600; color: var(--success); text-align: center; }
-  .card-back .word-en { font-size: 0.88rem; color: var(--muted); text-align: center; }
+  .card-face { position: absolute; inset: 0; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); backface-visibility: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 28px 22px; transition: background .3s, border-color .3s; }
+  .card-face::before { content: ''; position: absolute; inset: 0; border-radius: var(--radius); background: radial-gradient(ellipse at 30% 20%, rgba(79,142,247,.06) 0%, transparent 60%); pointer-events: none; }
+
+  /* Front content */
+  .card-front .word { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.4rem, 10vw, 3.6rem); font-weight: 700; color: var(--text); letter-spacing: -0.02em; text-align: center; line-height: 1.1; }
+  .card-front .note { font-size: clamp(0.85rem, 2.8vw, 1.05rem); color: var(--sub); text-align: center; line-height: 1.4; font-style: italic; margin-top: 2px; }
+  .card-front .hint { font-size: 0.68rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 4px; }
+
+  /* Back content */
+  .card-back { transform: rotateY(180deg); background: var(--card); }
+  .card-back .translation { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.4rem, 5.5vw, 2rem); font-weight: 600; color: var(--success); text-align: center; }
+  .card-back .word-en { font-size: 0.92rem; color: var(--muted); text-align: center; margin-bottom: 4px; }
 
   /* Sound btn */
-  #sound-btn {
-    position: absolute; top: 14px; right: 14px;
-    width: 46px; height: 46px; border-radius: 50%;
-    border: 1px solid var(--border); background: rgba(79,142,247,.08);
-    color: var(--accent); display: flex; align-items: center; justify-content: center;
-    cursor: pointer; font-size: 1.35rem; z-index: 10;
-    -webkit-tap-highlight-color: transparent;
-    transition: background .2s;
-  }
+  #sound-btn { position: absolute; top: 14px; right: 14px; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--border); background: rgba(79,142,247,.08); color: var(--accent); display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1.4rem; z-index: 10; -webkit-tap-highlight-color: transparent; transition: background .15s; }
   #sound-btn:active { background: rgba(79,142,247,.25); }
 
   #audio-status { font-size: 0.65rem; color: var(--muted); height: 12px; }
 
   /* Bottom nav */
-  #nav-bar {
-    flex-shrink: 0;
-    padding: 12px 20px max(16px, env(safe-area-inset-bottom));
-    background: var(--surface); border-top: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: center; gap: 14px;
-  }
-  .nav-btn {
-    width: 60px; height: 60px; border-radius: 50%;
-    border: 1px solid var(--border); background: var(--card);
-    color: var(--text); font-size: 1.7rem; cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-    -webkit-tap-highlight-color: transparent; transition: background .15s;
-  }
+  #nav-bar { flex-shrink: 0; padding: 12px 18px max(16px, env(safe-area-inset-bottom)); background: var(--surface); border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: center; gap: 12px; transition: background .3s, border-color .3s; }
+  .nav-btn { width: 62px; height: 62px; border-radius: 50%; border: 1px solid var(--border); background: var(--card); color: var(--text); font-size: 1.8rem; cursor: pointer; display: flex; align-items: center; justify-content: center; -webkit-tap-highlight-color: transparent; transition: background .15s, border-color .3s; }
   .nav-btn:active { background: var(--border); }
   .nav-btn:disabled { opacity: .25; }
-  #flip-btn {
-    flex: 1; max-width: 180px; height: 60px; border-radius: 99px;
-    border: 1px solid var(--accent); background: rgba(79,142,247,.1);
-    color: var(--accent); font-family: 'Inter', sans-serif;
-    font-size: 0.95rem; font-weight: 600; cursor: pointer;
-    -webkit-tap-highlight-color: transparent; transition: background .15s;
-  }
-  #flip-btn:active { background: rgba(79,142,247,.25); }
+  #flip-btn { flex: 1; max-width: 180px; height: 62px; border-radius: 99px; border: 1px solid var(--accent); background: rgba(79,142,247,.1); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 0.96rem; font-weight: 600; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background .15s; }
+  #flip-btn:active { background: rgba(79,142,247,.28); }
 </style>
 </head>
 <body>
 
 <header>
-  <button id="menu-btn" onclick="toggleDrawer()">
-    <span></span><span></span><span></span>
-  </button>
+  <button id="menu-btn" onclick="toggleDrawer()"><span></span><span></span><span></span></button>
   <h1>HoangHuy</h1>
-  <div style="width:34px"></div>
+  <button id="theme-btn" onclick="toggleTheme()">🌙</button>
 </header>
 
 <div id="drawer-overlay" onclick="closeDrawer()"></div>
-<div id="drawer">
-  <h2>Chủ đề</h2>
-  <div id="drawer-menu"></div>
-</div>
+<div id="drawer"><h2>Chủ đề</h2><div id="drawer-menu"></div></div>
 
 <div id="app">
   <div id="section-bar"><div id="section-title"></div></div>
-
   <div id="middle">
     <div id="counter"></div>
     <div id="progress-wrap"><div id="progress-bar"></div></div>
-
     <div id="card-viewport">
       <div id="card-track">
-        <!-- slot prev -->
-        <div class="card-slot" id="slot-prev">
-          <div class="card" id="card-prev">
-            <div class="card-face card-front"><div class="word" id="prev-word-en"></div></div>
-            <div class="card-face card-back">
-              <div class="word-en" id="prev-word-en-back"></div>
-              <div class="translation" id="prev-word-vi"></div>
-            </div>
+        <div class="card-slot"><div class="card" id="card-prev">
+          <div class="card-face card-front"><div class="word" id="prev-en"></div><div class="note" id="prev-n"></div></div>
+          <div class="card-face card-back"><div class="word-en" id="prev-en-b"></div><div class="translation" id="prev-vi"></div></div>
+        </div></div>
+        <div class="card-slot"><div class="card" id="card-cur">
+          <div class="card-face card-front">
+            <button id="sound-btn" onclick="event.stopPropagation();playAudio()">🔊</button>
+            <div class="word" id="cur-en"></div>
+            <div class="note" id="cur-n"></div>
+            <div class="hint">nhấn để xem nghĩa</div>
           </div>
-        </div>
-        <!-- slot current -->
-        <div class="card-slot" id="slot-cur">
-          <div class="card" id="card-cur">
-            <div class="card-face card-front">
-              <button id="sound-btn" onclick="event.stopPropagation(); playAudio()">🔊</button>
-              <div class="word" id="cur-word-en"></div>
-              <div class="hint">nhấn để xem nghĩa</div>
-            </div>
-            <div class="card-face card-back">
-              <div class="word-en" id="cur-word-en-back"></div>
-              <div class="translation" id="cur-word-vi"></div>
-            </div>
-          </div>
-        </div>
-        <!-- slot next -->
-        <div class="card-slot" id="slot-next">
-          <div class="card" id="card-next">
-            <div class="card-face card-front"><div class="word" id="next-word-en"></div></div>
-            <div class="card-face card-back">
-              <div class="word-en" id="next-word-en-back"></div>
-              <div class="translation" id="next-word-vi"></div>
-            </div>
-          </div>
-        </div>
+          <div class="card-face card-back"><div class="word-en" id="cur-en-b"></div><div class="translation" id="cur-vi"></div></div>
+        </div></div>
+        <div class="card-slot"><div class="card" id="card-next">
+          <div class="card-face card-front"><div class="word" id="next-en"></div><div class="note" id="next-n"></div></div>
+          <div class="card-face card-back"><div class="word-en" id="next-en-b"></div><div class="translation" id="next-vi"></div></div>
+        </div></div>
       </div>
     </div>
-
     <div id="audio-status"></div>
   </div>
-
   <div id="nav-bar">
     <button class="nav-btn" id="prev-btn" onclick="navigate(-1)">‹</button>
     <button id="flip-btn" onclick="flipCard()">Lật thẻ</button>
@@ -219,30 +137,48 @@
 </div>
 
 <script>
-let DATA          = [];
-let curSection    = 0;
-let curIndex      = 0;
-let isFlipped     = false;
-let isAnimating   = false;
-let currentAudio  = null;
+// ── State ─────────────────────────────────────────────────────────────────────
+let SECTIONS    = [];   // flat list of sections (after splitting >10 words)
+let curSec      = 0;
+let curIdx      = 0;
+let isFlipped   = false;
+let isAnimating = false;
+let isDark      = true;
+
+// ── Theme ─────────────────────────────────────────────────────────────────────
+function toggleTheme() {
+  isDark = !isDark;
+  document.body.classList.toggle('light', !isDark);
+  document.getElementById('theme-btn').textContent = isDark ? '🌙' : '☀️';
+}
 
 // ── Drawer ────────────────────────────────────────────────────────────────────
-function toggleDrawer() {
-  document.getElementById('drawer').classList.toggle('open');
-  document.getElementById('drawer-overlay').classList.toggle('open');
-}
-function closeDrawer() {
-  document.getElementById('drawer').classList.remove('open');
-  document.getElementById('drawer-overlay').classList.remove('open');
-}
+function toggleDrawer() { document.getElementById('drawer').classList.toggle('open'); document.getElementById('drawer-overlay').classList.toggle('open'); }
+function closeDrawer()  { document.getElementById('drawer').classList.remove('open'); document.getElementById('drawer-overlay').classList.remove('open'); }
 
-// ── Init ──────────────────────────────────────────────────────────────────────
+// ── Load & split groups ───────────────────────────────────────────────────────
+const MAX_PER_GROUP = 10;
+
 async function init() {
   try {
     const res = await fetch('h.json');
     if (!res.ok) throw new Error();
-    DATA = await res.json();
-    buildDrawerMenu();
+    const raw = await res.json();
+    // Split any group with >10 words into sub-groups
+    SECTIONS = [];
+    raw.forEach(sec => {
+      const words = sec.words;
+      if (words.length <= MAX_PER_GROUP) {
+        SECTIONS.push(sec);
+      } else {
+        let part = 1;
+        for (let i = 0; i < words.length; i += MAX_PER_GROUP) {
+          SECTIONS.push({ title: `${sec.title} (${part++})`, words: words.slice(i, i + MAX_PER_GROUP) });
+        }
+      }
+    });
+    buildDrawer();
+    resetTrack();
     fillSlots();
     renderMeta();
     setTimeout(playAudio, 700);
@@ -251,88 +187,111 @@ async function init() {
       `<div style="text-align:center;padding:60px;color:#f87171;">
         <div style="font-size:2rem;margin-bottom:12px">⚠️</div>
         <div style="font-weight:600">Không tìm thấy h.json</div>
-        <div style="font-size:0.8rem;color:#555;margin-top:8px">Đặt h.json cùng thư mục HTML</div>
+        <div style="font-size:0.8rem;color:var(--muted);margin-top:8px">Đặt h.json cùng thư mục HTML</div>
       </div>`;
   }
 }
 init();
 
-function buildDrawerMenu() {
+function buildDrawer() {
   const menu = document.getElementById('drawer-menu');
   menu.innerHTML = '';
-  DATA.forEach((sec, i) => {
+  SECTIONS.forEach((sec, i) => {
     const btn = document.createElement('button');
     btn.className = 'drawer-tab' + (i === 0 ? ' active' : '');
     btn.textContent = sec.title;
-    btn.onclick = () => { curSection = i; curIndex = 0; closeDrawer(); resetTrack(); fillSlots(); renderMeta(); setTimeout(playAudio,400); document.querySelectorAll('.drawer-tab').forEach((t,j)=>t.classList.toggle('active',j===i)); };
+    btn.dataset.idx = i;
+    btn.onclick = () => { jumpToSection(i); closeDrawer(); };
     menu.appendChild(btn);
   });
 }
 
+function jumpToSection(i) {
+  curSec = i; curIdx = 0;
+  document.querySelectorAll('.drawer-tab').forEach((t, j) => t.classList.toggle('active', j === i));
+  resetTrack(); fillSlots(); renderMeta();
+  setTimeout(playAudio, 400);
+}
+
 // ── Slots ─────────────────────────────────────────────────────────────────────
-function word(offset) {
-  const sec = DATA[curSection];
-  const idx = curIndex + offset;
-  return (idx >= 0 && idx < sec.words.length) ? sec.words[idx] : null;
+function getWord(secOffset, idxOffset) {
+  let s = curSec + secOffset, idx = curIdx + idxOffset;
+  if (s < 0 || s >= SECTIONS.length) return null;
+  const words = SECTIONS[s].words;
+  if (idx < 0 || idx >= words.length) return null;
+  return words[idx];
+}
+
+// Get the logical prev/next across section boundaries
+function logicalWord(dir) {
+  const sec   = SECTIONS[curSec];
+  const nIdx  = curIdx + dir;
+  if (dir === -1) {
+    if (nIdx >= 0) return { sec: curSec, idx: nIdx };
+    if (curSec > 0) { const ps = SECTIONS[curSec - 1]; return { sec: curSec - 1, idx: ps.words.length - 1 }; }
+    return null;
+  } else {
+    if (nIdx < sec.words.length) return { sec: curSec, idx: nIdx };
+    if (curSec + 1 < SECTIONS.length) return { sec: curSec + 1, idx: 0 };
+    return null;
+  }
 }
 
 function fillSlots() {
-  const prev = word(-1), cur = word(0), next = word(1);
-  setSlot('prev', prev);
-  setSlot('cur',  cur);
-  setSlot('next', next);
+  const prevPos = logicalWord(-1);
+  const nextPos = logicalWord(1);
+  const curWord  = SECTIONS[curSec].words[curIdx];
+  const prevWord = prevPos ? SECTIONS[prevPos.sec].words[prevPos.idx] : null;
+  const nextWord = nextPos ? SECTIONS[nextPos.sec].words[nextPos.idx] : null;
+
+  setSlot('prev', prevWord);
+  setSlot('cur',  curWord);
+  setSlot('next', nextWord);
   document.getElementById('card-cur').classList.remove('flipped');
   isFlipped = false;
 }
 
 function setSlot(name, w) {
-  const en  = document.getElementById(`${name}-word-en`);
-  const enb = document.getElementById(`${name}-word-en-back`);
-  const vi  = document.getElementById(`${name}-word-vi`);
-  if (en)  en.textContent  = w ? w.e : '';
-  if (enb) enb.textContent = w ? w.e : '';
-  if (vi)  vi.textContent  = w ? w.v : '';
+  const ids = { prev: ['prev-en','prev-n','prev-en-b','prev-vi'], cur: ['cur-en','cur-n','cur-en-b','cur-vi'], next: ['next-en','next-n','next-en-b','next-vi'] };
+  const [enId, nId, enbId, viId] = ids[name];
+  document.getElementById(enId).textContent  = w ? w.e  : '';
+  document.getElementById(nId).textContent   = w ? (w.n || '') : '';
+  document.getElementById(enbId).textContent = w ? w.e  : '';
+  document.getElementById(viId).textContent  = w ? w.v  : '';
 }
 
 function renderMeta() {
-  const sec = DATA[curSection];
+  const sec = SECTIONS[curSec];
   document.getElementById('section-title').textContent = sec.title;
-  document.getElementById('counter').textContent       = `${curIndex + 1} / ${sec.words.length}`;
-  document.getElementById('prev-btn').disabled         = curIndex === 0;
-  document.getElementById('next-btn').disabled         = curIndex === sec.words.length - 1;
-  document.getElementById('progress-bar').style.width  = ((curIndex + 1) / sec.words.length * 100) + '%';
-  document.getElementById('audio-status').textContent  = '';
+  document.getElementById('counter').textContent       = `${curIdx + 1} / ${sec.words.length}`;
+  document.getElementById('prev-btn').disabled         = !logicalWord(-1);
+  document.getElementById('next-btn').disabled         = !logicalWord(1);
+  document.getElementById('progress-bar').style.width  = ((curIdx + 1) / sec.words.length * 100) + '%';
+  document.querySelectorAll('.drawer-tab').forEach((t,i) => t.classList.toggle('active', i === curSec));
 }
 
 function resetTrack() {
-  const track = document.getElementById('card-track');
-  track.classList.remove('animating');
-  track.style.transform = '';
+  const t = document.getElementById('card-track');
+  t.classList.remove('animating'); t.style.transform = '';
 }
 
 // ── Navigate ──────────────────────────────────────────────────────────────────
 function navigate(dir) {
   if (isAnimating) return;
-  const next = curIndex + dir;
-  const len  = DATA[curSection].words.length;
-  if (next < 0 || next >= len) return;
-
+  const dest = logicalWord(dir);
+  if (!dest) return;
   isAnimating = true;
-  const track  = document.getElementById('card-track');
-  const movePct = dir === 1 ? -33.333 : 33.333;
-
+  const track = document.getElementById('card-track');
   track.classList.add('animating');
-  track.style.transform = `translateX(${movePct}%)`;
-
+  track.style.transform = dir === 1 ? 'translateX(-33.333%)' : 'translateX(33.333%)';
   track.addEventListener('transitionend', function h() {
     track.removeEventListener('transitionend', h);
     track.classList.remove('animating');
     track.style.transform = '';
-    curIndex    = next;
+    curSec = dest.sec; curIdx = dest.idx;
     isAnimating = false;
-    fillSlots();
-    renderMeta();
-    setTimeout(playAudio, 200);
+    fillSlots(); renderMeta();
+    setTimeout(playAudio, 180);
   });
 }
 
@@ -343,103 +302,73 @@ function flipCard() {
 document.getElementById('card-cur').addEventListener('click', flipCard);
 
 // ── Touch swipe ───────────────────────────────────────────────────────────────
-let tx0 = 0, ty0 = 0, dragging = false, dragDx = 0;
-const vp = document.getElementById('card-viewport');
+let tx0=0, ty0=0, dragging=false, dragDx=0;
+const vp    = document.getElementById('card-viewport');
 const track = document.getElementById('card-track');
 
 vp.addEventListener('touchstart', e => {
   if (isAnimating) return;
-  tx0 = e.touches[0].clientX; ty0 = e.touches[0].clientY; dragging = false; dragDx = 0;
-}, { passive: true });
+  tx0=e.touches[0].clientX; ty0=e.touches[0].clientY; dragging=false; dragDx=0;
+}, {passive:true});
 
 vp.addEventListener('touchmove', e => {
   if (isAnimating) return;
-  const dx = e.touches[0].clientX - tx0;
-  const dy = e.touches[0].clientY - ty0;
-  if (!dragging && Math.abs(dx) < 8) return;
-  if (!dragging && Math.abs(dy) > Math.abs(dx)) return;
-  dragging = true; dragDx = dx;
-  // Move track: 1px finger → track moves proportionally (viewport width = 33.333% of track)
-  const vpW = vp.offsetWidth;
-  const pct  = (dx / vpW) * 33.333;
-  track.style.transform = `translateX(${pct}%)`;
-}, { passive: true });
+  const dx=e.touches[0].clientX-tx0, dy=e.touches[0].clientY-ty0;
+  if (!dragging && Math.abs(dx)<6) return;
+  if (!dragging && Math.abs(dy)>Math.abs(dx)) return;
+  dragging=true; dragDx=dx;
+  const pct=(dx/vp.offsetWidth)*33.333;
+  track.style.transform=`translateX(${pct}%)`;
+},{passive:true});
 
-vp.addEventListener('touchend', () => {
+vp.addEventListener('touchend', ()=>{
   if (!dragging) return;
-  dragging = false;
-  const dx  = dragDx;
-  const len = DATA[curSection].words.length;
-  const vpW = vp.offsetWidth;
-  const threshold = vpW * 0.25;
-
-  if (dx < -threshold && curIndex + 1 < len) {
-    navigate(1);
-  } else if (dx > threshold && curIndex > 0) {
-    navigate(-1);
-  } else {
-    // Snap back
+  dragging=false;
+  const threshold = vp.offsetWidth * 0.18; // 18% — chỉ cần kéo nhẹ
+  if (dragDx < -threshold) navigate(1);
+  else if (dragDx > threshold) navigate(-1);
+  else {
     track.classList.add('animating');
-    track.style.transform = '';
-    track.addEventListener('transitionend', function h() {
-      track.removeEventListener('transitionend', h);
-      track.classList.remove('animating');
-    });
+    track.style.transform='';
+    track.addEventListener('transitionend', function h(){ track.removeEventListener('transitionend',h); track.classList.remove('animating'); });
   }
-  dragDx = 0;
-}, { passive: true });
+  dragDx=0;
+},{passive:true});
 
 // ── Keyboard ──────────────────────────────────────────────────────────────────
-document.addEventListener('keydown', e => {
-  if (!DATA.length) return;
-  if (e.key === 'ArrowRight') navigate(1);
-  if (e.key === 'ArrowLeft')  navigate(-1);
-  if (e.key === ' ')          { e.preventDefault(); flipCard(); }
-  if (e.key.toLowerCase() === 's') playAudio();
+document.addEventListener('keydown', e=>{
+  if (!SECTIONS.length) return;
+  if (e.key==='ArrowRight') navigate(1);
+  if (e.key==='ArrowLeft')  navigate(-1);
+  if (e.key===' ') { e.preventDefault(); flipCard(); }
+  if (e.key.toLowerCase()==='s') playAudio();
 });
 
-// ── Audio — iPhone Web Speech (en-US) ────────────────────────────────────────
+// ── Audio — Web Speech (iPhone Samantha/Karen) ────────────────────────────────
 function playAudio() {
-  if (!DATA.length) return;
-  const w   = word(0); if (!w) return;
-  const txt = w.e.trim();
+  if (!SECTIONS.length) return;
+  const w = SECTIONS[curSec].words[curIdx]; if (!w) return;
   const btn = document.getElementById('sound-btn');
-
-  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
   if (window.speechSynthesis) speechSynthesis.cancel();
-
-  btn.textContent = '⏳';
-
-  const utt   = new SpeechSynthesisUtterance(txt);
-  utt.lang    = 'en-US';
-  utt.rate    = 0.85;
-  utt.pitch   = 1;
-  utt.volume  = 1;
-
-  // Chọn giọng tốt nhất — iPhone có "Samantha" hoặc "Karen"
-  function speak() {
-    const voices   = speechSynthesis.getVoices();
-    const priority = ['Samantha','Karen','Moira','Google US English','Microsoft Aria','Microsoft Guy'];
-    let best = null;
-    for (const name of priority) { best = voices.find(v => v.name.includes(name)); if (best) break; }
-    if (!best) best = voices.find(v => v.lang === 'en-US' && !v.name.includes('compact'));
-    if (!best) best = voices.find(v => v.lang.startsWith('en'));
-    if (best) utt.voice = best;
-    utt.onstart = () => { btn.textContent = '🔊'; };
-    utt.onend   = () => { btn.textContent = '🔊'; };
-    utt.onerror = () => { btn.textContent = '🔊'; };
+  btn.textContent='⏳';
+  const utt=new SpeechSynthesisUtterance(w.e.trim());
+  utt.lang='en-US'; utt.rate=0.85; utt.pitch=1; utt.volume=1;
+  function speak(){
+    const voices=speechSynthesis.getVoices();
+    const priority=['Samantha','Karen','Moira','Google US English','Microsoft Aria','Microsoft Guy','Zira'];
+    let best=null;
+    for (const n of priority){ best=voices.find(v=>v.name.includes(n)); if(best) break; }
+    if(!best) best=voices.find(v=>v.lang==='en-US'&&!v.name.toLowerCase().includes('compact'));
+    if(!best) best=voices.find(v=>v.lang.startsWith('en'));
+    if(best) utt.voice=best;
+    utt.onstart=()=>{ btn.textContent='🔊'; };
+    utt.onend=()=>{ btn.textContent='🔊'; };
+    utt.onerror=()=>{ btn.textContent='🔊'; };
     speechSynthesis.speak(utt);
   }
-
-  // iOS cần voices load xong mới speak được
-  if (speechSynthesis.getVoices().length > 0) {
-    speak();
-  } else {
-    speechSynthesis.onvoiceschanged = () => { speak(); };
-  }
+  speechSynthesis.getVoices().length>0 ? speak() : (speechSynthesis.onvoiceschanged=speak);
 }
-
-if (window.speechSynthesis) speechSynthesis.getVoices();
+if(window.speechSynthesis) speechSynthesis.getVoices();
 </script>
 </body>
 </html>
