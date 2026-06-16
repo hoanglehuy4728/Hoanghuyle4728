@@ -1,96 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flashcard Từ Vựng</title>
+<title>HoangHuy Flashcard</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap');
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --bg: #0d0f14; --surface: #161920; --card: #1c2030;
     --border: #252a38; --accent: #4f8ef7; --accent2: #7c5af0;
-    --text: #e8eaf0; --muted: #6b7280; --success: #34d399; --radius: 18px;
+    --text: #e8eaf0; --muted: #6b7280; --success: #34d399; --radius: 22px;
   }
   html, body { height: 100%; }
-  body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+  body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; user-select: none; }
 
   /* Header */
-  header { padding: 18px 24px; border-bottom: 1px solid var(--border); background: var(--surface); display: flex; align-items: center; gap: 12px; }
-  header h1 { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; background: linear-gradient(120deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  header { padding: 16px 20px; border-bottom: 1px solid var(--border); background: var(--surface); display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; background: linear-gradient(120deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
+  /* Hamburger */
+  #menu-btn { background: none; border: none; cursor: pointer; display: flex; flex-direction: column; gap: 5px; padding: 4px; }
+  #menu-btn span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: all .3s; }
 
+  /* Drawer overlay */
+  #drawer-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 100; opacity: 0; pointer-events: none; transition: opacity .3s; }
+  #drawer-overlay.open { opacity: 1; pointer-events: all; }
+
+  /* Drawer */
+  #drawer { position: fixed; top: 0; left: 0; bottom: 0; width: 280px; background: var(--surface); border-right: 1px solid var(--border); z-index: 101; transform: translateX(-100%); transition: transform .3s cubic-bezier(.4,0,.2,1); overflow-y: auto; padding: 20px 0; }
+  #drawer.open { transform: translateX(0); }
+  #drawer h2 { font-family: 'Space Grotesk', sans-serif; font-size: 0.75rem; font-weight: 600; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; padding: 8px 20px 12px; }
+  .drawer-tab { display: block; width: 100%; padding: 12px 20px; font-size: 0.88rem; font-weight: 500; color: var(--muted); border: none; background: none; cursor: pointer; text-align: left; font-family: 'Inter', sans-serif; border-left: 3px solid transparent; transition: color .2s, background .2s, border-color .2s; }
+  .drawer-tab:hover { color: var(--text); background: rgba(255,255,255,.04); }
+  .drawer-tab.active { color: var(--accent); border-left-color: var(--accent); background: rgba(79,142,247,.07); }
 
   /* App */
-  #app { flex: 1; display: flex; flex-direction: column; display: none; }
+  #app { flex: 1; display: flex; flex-direction: column; }
 
-  /* Menu */
-  #menu-wrap { background: var(--surface); border-bottom: 1px solid var(--border); overflow-x: auto; scrollbar-width: none; }
-  #menu-wrap::-webkit-scrollbar { display: none; }
-  #menu { display: flex; padding: 0 20px; gap: 4px; white-space: nowrap; }
-  .tab { padding: 10px 16px; font-size: 0.78rem; font-weight: 500; color: var(--muted); border: none; background: none; cursor: pointer; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; font-family: 'Inter', sans-serif; }
-  .tab:hover { color: var(--text); }
-  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  /* Section title */
+  #section-bar { padding: 10px 20px; background: var(--surface); border-bottom: 1px solid var(--border); }
+  #section-title { font-family: 'Space Grotesk', sans-serif; font-size: 0.82rem; font-weight: 600; color: var(--muted); }
 
-  /* Main */
-  main { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 32px 20px 40px; gap: 24px; }
-  #section-title { font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--muted); text-align: center; }
+  main { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 28px 16px 36px; gap: 22px; }
+
   #counter { font-size: 0.78rem; color: var(--muted); font-weight: 500; letter-spacing: 0.06em; }
 
   /* Progress */
-  #progress-wrap { width: 100%; max-width: 420px; height: 3px; background: var(--border); border-radius: 99px; overflow: hidden; }
+  #progress-wrap { width: 100%; max-width: 480px; height: 3px; background: var(--border); border-radius: 99px; overflow: hidden; }
   #progress-bar { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 99px; transition: width .4s ease; }
 
   /* Card */
-  #card-area { perspective: 1200px; width: 100%; max-width: 420px; height: 240px; }
-  #card { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transition: transform .5s cubic-bezier(.4,0,.2,1); cursor: pointer; }
+  #card-area { perspective: 1400px; width: 100%; max-width: 480px; height: 280px; touch-action: pan-y; }
+  #card {
+    width: 100%; height: 100%; position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s cubic-bezier(.4,0,.2,1);
+    cursor: pointer;
+  }
   #card.flipped { transform: rotateY(180deg); }
-  .card-face { position: absolute; inset: 0; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); backface-visibility: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 28px; }
-  .card-face::before { content: ''; position: absolute; inset: 0; border-radius: var(--radius); background: radial-gradient(ellipse at 30% 20%, rgba(79,142,247,.06) 0%, transparent 60%); pointer-events: none; }
-  .card-front .word { font-family: 'Space Grotesk', sans-serif; font-size: 2.2rem; font-weight: 700; color: var(--text); letter-spacing: -0.02em; text-align: center; }
+  #card.swipe-left  { animation: swipeLeft .35s ease forwards; }
+  #card.swipe-right { animation: swipeRight .35s ease forwards; }
+
+  @keyframes swipeLeft  { to { transform: translateX(-120%) rotateZ(-8deg); opacity: 0; } }
+  @keyframes swipeRight { to { transform: translateX(120%)  rotateZ(8deg);  opacity: 0; } }
+
+  .card-face {
+    position: absolute; inset: 0; background: var(--card);
+    border: 1px solid var(--border); border-radius: var(--radius);
+    backface-visibility: hidden; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 12px; padding: 32px;
+  }
+  .card-face::before { content: ''; position: absolute; inset: 0; border-radius: var(--radius); background: radial-gradient(ellipse at 30% 20%, rgba(79,142,247,.07) 0%, transparent 60%); pointer-events: none; }
+
+  .card-front .word { font-family: 'Space Grotesk', sans-serif; font-size: 2.8rem; font-weight: 700; color: var(--text); letter-spacing: -0.02em; text-align: center; line-height: 1.1; }
   .card-front .hint { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
   .card-back { transform: rotateY(180deg); background: #1a1f32; }
-  .card-back .translation { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 600; color: var(--success); text-align: center; }
-  .card-back .word-en { font-size: 0.88rem; color: var(--muted); text-align: center; }
+  .card-back .translation { font-family: 'Space Grotesk', sans-serif; font-size: 1.7rem; font-weight: 600; color: var(--success); text-align: center; }
+  .card-back .word-en { font-size: 0.92rem; color: var(--muted); text-align: center; }
 
-  /* Sound button */
-  #sound-btn { position: absolute; top: 14px; right: 14px; width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: rgba(79,142,247,.08); color: var(--accent); display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1rem; transition: background .2s, transform .15s; z-index: 10; }
-  #sound-btn:hover { background: rgba(79,142,247,.18); transform: scale(1.08); }
-  #sound-btn.playing { background: rgba(79,142,247,.25); }
-  #sound-btn.error { color: #f87171; border-color: #f87171; }
+  /* Sound button — bigger */
+  #sound-btn {
+    position: absolute; top: 14px; right: 14px;
+    width: 44px; height: 44px; border-radius: 50%;
+    border: 1px solid var(--border); background: rgba(79,142,247,.08);
+    color: var(--accent); display: flex; align-items: center; justify-content: center;
+    cursor: pointer; font-size: 1.3rem; transition: background .2s, transform .15s; z-index: 10;
+  }
+  #sound-btn:hover { background: rgba(79,142,247,.2); transform: scale(1.1); }
+  #sound-btn.playing { background: rgba(79,142,247,.28); }
 
   #audio-status { font-size: 0.7rem; color: var(--muted); height: 16px; }
 
+  /* Swipe hint */
+  #swipe-hint { font-size: 0.7rem; color: var(--border); letter-spacing: 0.04em; }
+
   /* Nav */
-  #nav { display: flex; align-items: center; gap: 16px; }
-  .nav-btn { width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 1.3rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s, transform .15s, border-color .2s; }
+  #nav { display: flex; align-items: center; gap: 14px; }
+  .nav-btn { width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 1.4rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s, transform .15s, border-color .2s; }
   .nav-btn:hover { background: var(--card); border-color: var(--accent); transform: scale(1.05); }
   .nav-btn:disabled { opacity: .3; cursor: not-allowed; transform: none; }
-  #flip-btn { padding: 12px 28px; border-radius: 99px; border: 1px solid var(--accent); background: rgba(79,142,247,.1); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 500; cursor: pointer; transition: background .2s; }
+  #flip-btn { padding: 14px 32px; border-radius: 99px; border: 1px solid var(--accent); background: rgba(79,142,247,.1); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: background .2s; }
   #flip-btn:hover { background: rgba(79,142,247,.2); }
 
-
-
   @media (max-width: 480px) {
-    #card-area { height: 210px; }
-    .card-front .word { font-size: 1.8rem; }
+    #card-area { height: 250px; }
+    .card-front .word { font-size: 2.2rem; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <span style="font-size:1.3rem">🃏</span>
-  <h1>Flashcard Từ Vựng</h1>
+  <button id="menu-btn" onclick="toggleDrawer()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <h1>HoangHuy</h1>
+  <div style="width:30px"></div>
 </header>
 
+<!-- Drawer -->
+<div id="drawer-overlay" onclick="closeDrawer()"></div>
+<div id="drawer">
+  <h2>Danh sách chủ đề</h2>
+  <div id="drawer-menu"></div>
+</div>
 
-<!-- App -->
 <div id="app" style="flex:1;display:flex;flex-direction:column;">
-  <div id="menu-wrap"><div id="menu"></div></div>
+  <div id="section-bar"><div id="section-title"></div></div>
   <main>
-    <div id="section-title"></div>
     <div id="counter"></div>
     <div id="progress-wrap"><div id="progress-bar"></div></div>
 
@@ -109,6 +147,7 @@
     </div>
 
     <div id="audio-status"></div>
+    <div id="swipe-hint">← vuốt để chuyển thẻ →</div>
 
     <div id="nav">
       <button class="nav-btn" id="prev-btn" onclick="navigate(-1)">‹</button>
@@ -124,15 +163,28 @@ let currentSection = 0;
 let currentIndex   = 0;
 let isFlipped      = false;
 let audioCache     = {};
+let currentAudio   = null;
 
-// ── Load h.json ──────────────────────────────────────────────────────────────
+// ── Drawer ────────────────────────────────────────────────────────────────────
+function toggleDrawer() {
+  document.getElementById('drawer').classList.toggle('open');
+  document.getElementById('drawer-overlay').classList.toggle('open');
+}
+function closeDrawer() {
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('drawer-overlay').classList.remove('open');
+}
+
+// ── Load h.json ───────────────────────────────────────────────────────────────
 async function init() {
   try {
     const res = await fetch('h.json');
     if (!res.ok) throw new Error();
     DATA = await res.json();
-    buildMenu();
+    buildDrawerMenu();
     render();
+    // Tự đọc khi load xong
+    setTimeout(playAudio, 600);
   } catch {
     document.getElementById('app').innerHTML =
       `<div style="text-align:center;padding:60px;color:#f87171;">
@@ -142,27 +194,26 @@ async function init() {
       </div>`;
   }
 }
-
 init();
 
-function buildMenu() {
-  const menu = document.getElementById('menu');
+function buildDrawerMenu() {
+  const menu = document.getElementById('drawer-menu');
   menu.innerHTML = '';
   DATA.forEach((sec, i) => {
     const btn = document.createElement('button');
-    btn.className = 'tab' + (i === 0 ? ' active' : '');
+    btn.className = 'drawer-tab' + (i === 0 ? ' active' : '');
     btn.textContent = sec.title;
-    btn.onclick = () => switchSection(i);
+    btn.onclick = () => { switchSection(i); closeDrawer(); };
     menu.appendChild(btn);
   });
 }
 
-// ── App logic ────────────────────────────────────────────────────────────────
 function switchSection(i) {
   currentSection = i;
   currentIndex   = 0;
-  document.querySelectorAll('.tab').forEach((t, j) => t.classList.toggle('active', j === i));
+  document.querySelectorAll('.drawer-tab').forEach((t, j) => t.classList.toggle('active', j === i));
   render();
+  setTimeout(playAudio, 400);
 }
 
 function render() {
@@ -194,8 +245,41 @@ function navigate(dir) {
   if (next < 0 || next >= len) return;
   currentIndex = next;
   render();
+  setTimeout(playAudio, 300);
 }
 
+// ── Swipe ─────────────────────────────────────────────────────────────────────
+let touchStartX = 0;
+let touchStartY = 0;
+const cardArea = document.getElementById('card-area');
+
+cardArea.addEventListener('touchstart', e => {
+  touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+}, { passive: true });
+
+cardArea.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  const dy = e.changedTouches[0].clientY - touchStartY;
+  if (Math.abs(dx) < 40 || Math.abs(dy) > Math.abs(dx)) return; // bỏ qua tap & vuốt dọc
+
+  const card = document.getElementById('card');
+  const dir  = dx < 0 ? 1 : -1;
+  const next = currentIndex + dir;
+  const len  = DATA[currentSection].words.length;
+  if (next < 0 || next >= len) return;
+
+  const animClass = dx < 0 ? 'swipe-left' : 'swipe-right';
+  card.classList.add(animClass);
+  setTimeout(() => {
+    card.classList.remove(animClass, 'flipped');
+    currentIndex = next;
+    render();
+    setTimeout(playAudio, 300);
+  }, 340);
+}, { passive: true });
+
+// ── Keyboard ──────────────────────────────────────────────────────────────────
 document.addEventListener('keydown', e => {
   if (!DATA.length) return;
   if (e.key === 'ArrowRight') navigate(1);
@@ -204,65 +288,102 @@ document.addEventListener('keydown', e => {
   if (e.key === 's' || e.key === 'S') playAudio();
 });
 
-// ── Audio ────────────────────────────────────────────────────────────────────
+// ── Audio ─────────────────────────────────────────────────────────────────────
 function resetSoundBtn() {
   const btn = document.getElementById('sound-btn');
-  btn.classList.remove('playing', 'error');
+  btn.classList.remove('playing');
   btn.textContent = '🔊';
 }
 function setStatus(msg) { document.getElementById('audio-status').textContent = msg; }
 
-async function playAudio() {
-  const word = DATA[currentSection].words[currentIndex].e;
-  const btn  = document.getElementById('sound-btn');
-  btn.classList.remove('error');
-  btn.classList.add('playing');
-  btn.textContent = '⏳';
-  try {
-    if (audioCache[word]) {
-      await playUrl(audioCache[word]);
-      btn.classList.remove('playing'); btn.textContent = '🔊';
-      return;
-    }
-    const res  = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
-    if (!res.ok) throw new Error('not found');
-    const data = await res.json();
-    let audioUrl = null;
-    outer:
-    for (const entry of data)
-      for (const p of (entry.phonetics || []))
-        if (p.audio) { audioUrl = p.audio; break outer; }
-    if (!audioUrl) throw new Error('no audio');
-    if (audioUrl.startsWith('//')) audioUrl = 'https:' + audioUrl;
-    audioCache[word] = audioUrl;
-    await playUrl(audioUrl);
-    setStatus('');
-    btn.classList.remove('playing'); btn.textContent = '🔊';
-  } catch {
-    setStatus('Không có audio thật, dùng giọng đọc máy');
-    btn.classList.remove('playing'); btn.classList.add('error'); btn.textContent = '🔈';
-    speechFallback(word);
-  }
+function cambridgeUrl(w) {
+  const a = w[0];
+  const b = w.slice(0,3).padEnd(3,'_');
+  const c = w.slice(0,5).padEnd(5,'_');
+  return `https://dictionary.cambridge.org/media/english/us_pron/${a}/${b}/${c}/${w}.mp3`;
 }
 
-function playUrl(url) {
-  return new Promise((resolve, reject) => {
-    const a = new Audio(url);
-    a.onended = resolve; a.onerror = reject;
-    a.play().catch(reject);
-  });
+function merriamUrl(w) {
+  const sub = w.startsWith('bix') ? 'bix'
+            : w.startsWith('gg')  ? 'gg'
+            : /^[^a-z]/i.test(w)  ? 'number'
+            : w[0];
+  return `https://media.merriam-webster.com/audio/prons/en/us/mp3/${sub}/${w}.mp3`;
+}
+
+function tryAudio(url, onSuccess, onFail) {
+  const audio = new Audio();
+  audio.crossOrigin = 'anonymous';
+  audio.src = url;
+  audio.oncanplaythrough = () => { audio.play(); onSuccess(); };
+  audio.onerror = () => onFail();
+  audio.load();
+  currentAudio = audio;
+}
+
+function playAudio() {
+  const word = DATA[currentSection].words[currentIndex].e.toLowerCase().trim();
+  const btn  = document.getElementById('sound-btn');
+
+  // Dừng audio đang phát nếu có
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if (window.speechSynthesis) speechSynthesis.cancel();
+
+  btn.classList.add('playing');
+  btn.textContent = '⏳';
+
+  // Cache
+  if (audioCache[word]) {
+    const audio = new Audio(audioCache[word]);
+    audio.play();
+    currentAudio = audio;
+    btn.classList.remove('playing'); btn.textContent = '🔊';
+    setStatus('');
+    return;
+  }
+
+  // 1. Cambridge
+  tryAudio(cambridgeUrl(word),
+    () => {
+      audioCache[word] = cambridgeUrl(word);
+      btn.classList.remove('playing'); btn.textContent = '🔊';
+      setStatus('');
+    },
+    () => {
+      // 2. Merriam-Webster
+      tryAudio(merriamUrl(word),
+        () => {
+          audioCache[word] = merriamUrl(word);
+          btn.classList.remove('playing'); btn.textContent = '🔊';
+          setStatus('');
+        },
+        () => {
+          // 3. Web Speech fallback
+          btn.classList.remove('playing'); btn.textContent = '🔊';
+          setStatus('');
+          speechFallback(word);
+        }
+      );
+    }
+  );
 }
 
 function speechFallback(word) {
   if (!window.speechSynthesis) return;
   speechSynthesis.cancel();
   const utt = new SpeechSynthesisUtterance(word);
-  utt.lang  = 'en-US'; utt.rate = 0.9;
-  const v = speechSynthesis.getVoices().find(v => v.lang.startsWith('en'));
-  if (v) utt.voice = v;
+  utt.lang  = 'en-US'; utt.rate = 0.85; utt.pitch = 1;
+  const voices    = speechSynthesis.getVoices();
+  const preferred = ['Samantha','Google US English','Microsoft Aria','Microsoft Guy','Karen','Moira'];
+  let best = null;
+  for (const name of preferred) { best = voices.find(v => v.name.includes(name)); if (best) break; }
+  if (!best) best = voices.find(v => v.lang === 'en-US');
+  if (!best) best = voices.find(v => v.lang.startsWith('en'));
+  if (best) utt.voice = best;
   utt.onend = () => setStatus('');
   speechSynthesis.speak(utt);
 }
+
 if (window.speechSynthesis) {
   speechSynthesis.getVoices();
   speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
