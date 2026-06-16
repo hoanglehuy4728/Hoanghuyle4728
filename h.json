@@ -148,6 +148,555 @@
       {"e": "medicine", "v": "thuốc"},
       {"e": "insurance", "v": "bảo hiểm"}
     ]
-  }
+   },
+  [
+
+ {
+  "title": "Mục 1: Employment (Công việc)",
+  "words": [
+    {
+      "e": "a blue-collar worker",
+      "n": "/ə bluː ˈkɑːlər ˈwɜːrkər/",
+      "v": "Người làm việc chân tay"
+    },
+    {
+      "e": "a white-collar worker",
+      "n": "/ə waɪt ˈkɑːlər ˈwɜːrkər/",
+      "v": "Nhân viên văn phòng"
+    },
+    {
+      "e": "Application",
+      "n": "/ˌæplɪˈkeɪʃn/",
+      "v": "Đơn xin việc"
+    },
+    {
+      "e": "Benefits",
+      "n": "/ˈbenɪfɪts/",
+      "v": "Phúc lợi"
+    },
+    {
+      "e": "Bonus",
+      "n": "/ˈboʊnəs/",
+      "v": "Tiền thưởng"
+    },
+    {
+      "e": "Break",
+      "n": "/breɪk/",
+      "v": "Giờ nghỉ"
+    },
+    {
+      "e": "Career",
+      "n": "/kəˈrɪr/",
+      "v": "Sự nghiệp"
+    },
+    {
+      "e": "Career counseling",
+      "n": "/kəˈrɪr ˈkaʊnsəlɪŋ/",
+      "v": "Tư vấn nghề nghiệp"
+    },
+    {
+      "e": "Co-working space",
+      "n": "/koʊ ˈwɜːrkɪŋ speɪs/",
+      "v": "Không gian làm việc chung"
+    },
+    {
+      "e": "Colleague",
+      "n": "/ˈkɑːliːɡ/",
+      "v": "Đồng nghiệp"
+    },
+    {
+      "e": "Commute",
+      "n": "/kəˈmjuːt/",
+      "v": "Đi làm"
+    },
+    {
+      "e": "Contract",
+      "n": "/ˈkɑːntrækt/",
+      "v": "Hợp đồng"
+    },
+    {
+      "e": "Cover letter",
+      "n": "/ˈkʌvər ˈletər/",
+      "v": "Thư xin việc"
+    },
+    {
+      "e": "Cubicle",
+      "n": "/ˈkjuːbɪkl/",
+      "v": "Văn phòng riêng biệt"
+    },
+    {
+      "e": "Cultural fit",
+      "n": "/ˈkʌltʃərəl fɪt/",
+      "v": "Phù hợp văn hóa"
+    },
+    {
+      "e": "Curriculum vitae (CV)",
+      "n": "/kəˈrɪkjələm ˈviːtaɪ/",
+      "v": "Sơ yếu lý lịch"
+    },
+    {
+      "e": "Development",
+      "n": "/dɪˈveləpmənt/",
+      "v": "Phát triển"
+    },
+    {
+      "e": "Downsizing",
+      "n": "/ˈdaʊnsaɪzɪŋ/",
+      "v": "Thu nhỏ quy mô"
+    },
+    {
+      "e": "Employee",
+      "n": "/ɪmˈploɪiː/",
+      "v": "Nhân viên"
+    },
+    {
+      "e": "Employee assistance program",
+      "n": "/ɪmˈploɪiː əˈsɪstəns ˈproʊɡræm/",
+      "v": "Chương trình hỗ trợ nhân viên"
+    },
+    {
+      "e": "Employee benefits",
+      "n": "/ɪmˈploɪiː ˈbenɪfɪts/",
+      "v": "Phúc lợi cho nhân viên"
+    },
+    {
+      "e": "Employee engagement",
+      "n": "/ɪmˈploɪiː ɪnˈɡeɪdʒmənt/",
+      "v": "Sự tương tác của nhân viên"
+    },
+    {
+      "e": "Employer",
+      "n": "/ɪmˈploɪər/",
+      "v": "Nhà tuyển dụng"
+    },
+    {
+      "e": "Employment",
+      "n": "/ɪmˈploɪmənt/",
+      "v": "Việc làm"
+    },
+    {
+      "e": "Entrepreneur",
+      "n": "/ˌɑːntrəprəˈnɜːr/",
+      "v": "Doanh nhân"
+    },
+    {
+      "e": "Equal pay",
+      "n": "/ˈiːkwəl peɪ/",
+      "v": "Lương bình đẳng"
+    },
+    {
+      "e": "Evaluation",
+      "n": "/ɪˌvæljuˈeɪʃn/",
+      "v": "Đánh giá"
+    },
+    {
+      "e": "Experience",
+      "n": "/ɪkˈspɪriəns/",
+      "v": "Kinh nghiệm"
+    },
+    {
+      "e": "Flexibility",
+      "n": "/ˌfleksəˈbɪləti/",
+      "v": "Tính linh hoạt"
+    },
+    {
+      "e": "Flextime",
+      "n": "/ˈflekstaɪm/",
+      "v": "Thời gian làm việc linh hoạt"
+    },
+    {
+      "e": "Freelancer",
+      "n": "/ˈfriːlænsər/",
+      "v": "Người làm nghề tự do"
+    },
+    {
+      "e": "Full-time",
+      "n": "/ˌfʊl ˈtaɪm/",
+      "v": "Toàn thời gian"
+    },
+    {
+      "e": "Gender equality",
+      "n": "/ˈdʒendər iˈkwɑːləti/",
+      "v": "Bình đẳng giới tính"
+    },
+    {
+      "e": "Glass ceiling",
+      "n": "/ˌɡlæs ˈsiːlɪŋ/",
+      "v": "Rào cản thăng tiến"
+    },
+    {
+      "e": "Grievance procedure",
+      "n": "/ˈɡriːvəns prəˈsiːdʒər/",
+      "v": "Quy trình khiếu nại"
+    },
+    {
+      "e": "Incentive",
+      "n": "/ɪnˈsentɪv/",
+      "v": "Động cơ, khuyến khích"
+    },
+    {
+      "e": "Industrial action",
+      "n": "/ɪnˈdʌstriəl ˈækʃn/",
+      "v": "Đình công"
+    },
+    {
+      "e": "Interview",
+      "n": "/ˈɪntərvjuː/",
+      "v": "Phỏng vấn"
+    },
+    {
+      "e": "Job",
+      "n": "/dʒɑːb/",
+      "v": "Công việc"
+    },
+    {
+      "e": "Job board",
+      "n": "/dʒɑːb bɔːrd/",
+      "v": "Bảng thông tin việc làm"
+    },
+    {
+      "e": "Job description",
+      "n": "/dʒɑːb dɪˈskrɪpʃn/",
+      "v": "Mô tả công việc"
+    },
+    {
+      "e": "Job enrichment",
+      "n": "/dʒɑːb ɪnˈrɪtʃmənt/",
+      "v": "Bổ sung công việc"
+    },
+    {
+      "e": "Job market",
+      "n": "/dʒɑːb ˈmɑːrkɪt/",
+      "v": "Thị trường việc làm"
+    },
+    {
+      "e": "Job rotation",
+      "n": "/dʒɑːb roʊˈteɪʃn/",
+      "v": "Luân chuyển công việc"
+    },
+    {
+      "e": "Job satisfaction",
+      "n": "/dʒɑːb ˌsætɪsˈfækʃn/",
+      "v": "Sự hài lòng với công việc"
+    },
+    {
+      "e": "Job search",
+      "n": "/dʒɑːb sɜːrtʃ/",
+      "v": "Tìm kiếm việc làm"
+    },
+    {
+      "e": "Job security",
+      "n": "/dʒɑːb sɪˈkjʊrəti/",
+      "v": "An ninh công việc"
+    },
+    {
+      "e": "Job sharing",
+      "n": "/dʒɑːb ˈʃerɪŋ/",
+      "v": "Chia sẻ công việc"
+    },
+    {
+      "e": "Layoff",
+      "n": "/ˈleɪɔːf/",
+      "v": "Sa thải"
+    },
+    {
+      "e": "Lunch break",
+      "n": "/ˈlʌntʃ breɪk/",
+      "v": "Giờ nghỉ trưa"
+    },
+    {
+      "e": "Maternity/paternity leave",
+      "n": "/məˈtɜːrnəti / pəˈtɜːrnəti liːv/",
+      "v": "Nghỉ thai sản/ nghỉ phép vợ sinh"
+    },
+    {
+      "e": "Mentor",
+      "n": "/ˈmentɔːr/",
+      "v": "Người hướng dẫn"
+    },
+    {
+      "e": "Networking",
+      "n": "/ˈnetwɜːrkɪŋ/",
+      "v": "Mạng lưới quan hệ"
+    },
+    {
+      "e": "Non-disclosure agreement",
+      "n": "/ˌnɑːn dɪˈskloʊʒər əˈɡriːmənt/",
+      "v": "Hợp đồng không tiết lộ thông tin"
+    },
+    {
+      "e": "Occupation",
+      "n": "/ˌɑːkjuˈpeɪʃn/",
+      "v": "Nghề nghiệp"
+    },
+    {
+      "e": "Occupational hazard",
+      "n": "/ˌɑːkjuˈpeɪʃənl ˈhæzərd/",
+      "v": "Rủi ro nghề nghiệp"
+    },
+    {
+      "e": "Office",
+      "n": "/ˈɑːfɪs/",
+      "v": "Văn phòng"
+    },
+    {
+      "e": "Outsourcing",
+      "n": "/ˈaʊtsɔːrsɪŋ/",
+      "v": "Việc thuê ngoài"
+    },
+    {
+      "e": "Overtime",
+      "n": "/ˈoʊvərtaɪm/",
+      "v": "Làm thêm giờ"
+    },
+    {
+      "e": "Part-time",
+      "n": "/ˌpɑːrt ˈtaɪm/",
+      "v": "Bán thời gian"
+    },
+    {
+      "e": "Payroll",
+      "n": "/ˈpeɪroʊl/",
+      "v": "Bảng lương"
+    },
+    {
+      "e": "Pension",
+      "n": "/ˈpenʃn/",
+      "v": "Tiền lương hưu"
+    },
+    {
+      "e": "Performance",
+      "n": "/pərˈfɔːrməns/",
+      "v": "Hiệu suất, thành tích"
+    },
+    {
+      "e": "Performance appraisal",
+      "n": "/pərˈfɔːrməns əˈpreɪzl/",
+      "v": "Đánh giá hiệu suất làm việc"
+    },
+    {
+      "e": "Performance management",
+      "n": "/pərˈfɔːrməns ˈmænɪdʒmənt/",
+      "v": "Quản lý hiệu suất làm việc"
+    },
+    {
+      "e": "Permanent",
+      "n": "/ˈpɜːrmənənt/",
+      "v": "Vĩnh viễn"
+    },
+    {
+      "e": "Profession",
+      "n": "/prəˈfeʃn/",
+      "v": "Chức nghiệp"
+    },
+    {
+      "e": "Professional growth",
+      "n": "/prəˈfeʃənl ɡroʊθ/",
+      "v": "Phát triển chuyên môn"
+    },
+    {
+      "e": "Promotion",
+      "n": "/prəˈmoʊʃn/",
+      "v": "Thăng tiến"
+    },
+    {
+      "e": "Qualifications",
+      "n": "/ˌkwɑːlɪfɪˈkeɪʃnz/",
+      "v": "Trình độ, bằng cấp"
+    },
+    {
+      "e": "Raise",
+      "n": "/reɪz/",
+      "v": "Tăng lương"
+    },
+    {
+      "e": "Recruitment",
+      "n": "/rɪˈkruːtmənt/",
+      "v": "Tuyển dụng"
+    },
+    {
+      "e": "Redundancy",
+      "n": "/rɪˈdʌndənsi/",
+      "v": "Thừa nhân lực"
+    },
+    {
+      "e": "Remote team",
+      "n": "/rɪˈmoʊt tiːm/",
+      "v": "Nhóm làm việc từ xa"
+    },
+    {
+      "e": "Remote work",
+      "n": "/rɪˈmoʊt wɜːrk/",
+      "v": "Làm việc từ xa"
+    },
+    {
+      "e": "Resignation",
+      "n": "/ˌrezɪɡˈneɪʃn/",
+      "v": "Sự từ chức"
+    },
+    {
+      "e": "Resume",
+      "n": "/ˈrezʊmeɪ/",
+      "v": "Sơ yếu lý lịch"
+    },
+    {
+      "e": "Retirement plan",
+      "n": "/rɪˈtaɪərmənt plæn/",
+      "v": "Kế hoạch nghỉ hưu"
+    },
+    {
+      "e": "Salary",
+      "n": "/ˈsæləri/",
+      "v": "Lương"
+    },
+    {
+      "e": "Self-employed",
+      "n": "/ˌself ɪmˈploɪd/",
+      "v": "Tự làm chủ"
+    },
+    {
+      "e": "Severance package",
+      "n": "/ˈsevərəns ˈpækɪdʒ/",
+      "v": "Gói hỗ trợ khi chấm dứt hợp đồng"
+    },
+    {
+      "e": "Shift work",
+      "n": "/ˈʃɪft wɜːrk/",
+      "v": "Làm việc theo ca"
+    },
+    {
+      "e": "Sick leave",
+      "n": "/ˈsɪk liːv/",
+      "v": "Nghỉ ốm"
+    },
+    {
+      "e": "Skills",
+      "n": "/skɪlz/",
+      "v": "Kỹ năng"
+    },
+    {
+      "e": "Staffing",
+      "n": "/ˈstæfɪŋ/",
+      "v": "Quản lý nhân sự"
+    },
+    {
+      "e": "Succession planning",
+      "n": "/səkˈseʃn ˈplænɪŋ/",
+      "v": "Kế hoạch nhân sự kế thừa"
+    },
+    {
+      "e": "Talent acquisition",
+      "n": "/ˈtælənt ˌækwɪˈzɪʃn/",
+      "v": "Tuyển dụng nhân tài"
+    },
+    {
+      "e": "Teamwork",
+      "n": "/ˈtiːmwɜːrk/",
+      "v": "Làm việc nhóm"
+    },
+    {
+      "e": "Telecommuting",
+      "n": "/ˌtelikəˈmjuːtɪŋ/",
+      "v": "Làm việc từ xa"
+    },
+    {
+      "e": "Temporary",
+      "n": "/ˈtempəreri/",
+      "v": "Tạm thời"
+    },
+    {
+      "e": "Time clock",
+      "n": "/ˈtaɪm klɑːk/",
+      "v": "Máy chấm công"
+    },
+    {
+      "e": "Training",
+      "n": "/ˈtreɪnɪŋ/",
+      "v": "Đào tạo"
+    },
+    {
+      "e": "Unemployment",
+      "n": "/ˌʌnɪmˈploɪmənt/",
+      "v": "Thất nghiệp"
+    },
+    {
+      "e": "Union",
+      "n": "/ˈjuːniən/",
+      "v": "Công đoàn"
+    },
+    {
+      "e": "Wage",
+      "n": "/weɪdʒ/",
+      "v": "Tiền công"
+    },
+    {
+      "e": "Work environment",
+      "n": "/wɜːrk ɪnˈvaɪrənmənt/",
+      "v": "Môi trường làm việc"
+    },
+    {
+      "e": "Work permit",
+      "n": "/wɜːrk ˈpɜːrmɪt/",
+      "v": "Giấy phép làm việc"
+    },
+    {
+      "e": "Work-life balance",
+      "n": "/wɜːrk laɪf ˈbæləns/",
+      "v": "Cân bằng công việc và cuộc sống"
+    },
+    {
+      "e": "Work-life boundaries",
+      "n": "/wɜːrk laɪf ˈbaʊndəriz/",
+      "v": "Giới hạn giữa công việc và cuộc sống"
+    },
+    {
+      "e": "Work-life integration",
+      "n": "/wɜːrk laɪf ˌɪntɪˈɡreɪʃn/",
+      "v": "Hòa nhập công việc và cuộc sống"
+    },
+    {
+      "e": "Work-related injury",
+      "n": "/wɜːrk rɪˈleɪtɪd ˈɪndʒəri/",
+      "v": "Chấn thương liên quan đến công việc"
+    },
+    {
+      "e": "Workforce",
+      "n": "/ˈwɜːrkfɔːrs/",
+      "v": "Lực lượng lao động"
+    },
+    {
+      "e": "Workforce diversity",
+      "n": "/ˈwɜːrkfɔːrs daɪˈvɜːrsəti/",
+      "v": "Đa dạng nhân lực"
+    },
+    {
+      "e": "Workforce planning",
+      "n": "/ˈwɜːrkfɔːrs ˈplænɪŋ/",
+      "v": "Kế hoạch nhân lực"
+    },
+    {
+      "e": "Working hours",
+      "n": "/ˈwɜːrkɪŋ ˈaʊərz/",
+      "v": "Giờ làm việc"
+    },
+    {
+      "e": "Workload",
+      "n": "/ˈwɜːrkloʊd/",
+      "v": "Khối lượng công việc"
+    },
+    {
+      "e": "Workplace",
+      "n": "/ˈwɜːrkpleɪs/",
+      "v": "Nơi làm việc"
+    },
+    {
+      "e": "Workplace conflict",
+      "n": "/ˈwɜːrkpleɪs ˈkɑːnflɪkt/",
+      "v": "Xung đột trong nơi làm việc"
+    }
+  ]
+}
+
+  
 ]
 
