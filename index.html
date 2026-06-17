@@ -283,7 +283,7 @@ function playAudio(){
   const w=SECTIONS[curSec].words[curIdx];if(!w)return;
   const btn=document.getElementById('sound-btn');
   if(window.speechSynthesis)speechSynthesis.cancel();
-  btn.textContent='✨';
+  btn.textContent='💤';
   const utt=new SpeechSynthesisUtterance(w.e.trim());
   utt.lang='en-US';utt.rate=0.85;utt.pitch=1;utt.volume=1;
   function speak(){
