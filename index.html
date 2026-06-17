@@ -273,10 +273,11 @@ function buildDrawer() {
       parentRow.onclick = () => {
         const isOpen = subList.classList.contains('open');
         // Close all
-        document.querySelectorAll('.sub-list').forEach(l => { l.classList.remove('open'); });
+        document.querySelectorAll('.sub-list').forEach(l => { l.style.maxHeight = '0'; l.classList.remove('open'); });
         document.querySelectorAll('.parent-row').forEach(r => r.classList.remove('expanded'));
         if (!isOpen) {
           subList.classList.add('open');
+          subList.style.maxHeight = subList.scrollHeight + 'px';
           parentRow.classList.add('expanded');
         }
       };
