@@ -89,7 +89,7 @@
         </div></div>
         <div class="card-slot"><div class="card can-flip" id="card-cur">
           <div class="card-face card-front">
-            <button id="sound-btn" onclick="event.stopPropagation();playAudio()">🔊</button>
+            <button id="sound-btn" onclick="event.stopPropagation();playAudio()">✨</button>
             <div class="word" id="cur-en"></div>
             <div class="note" id="cur-n"></div>
             <div class="hint">nhấn để xem nghĩa</div>
@@ -114,7 +114,7 @@
 let SECTIONS=[],RAW=[],curSec=0,curIdx=0,isFlipped=false,isAnimating=false,isDark=true;
 const MAX_PER=10;
 
-function toggleTheme(){isDark=!isDark;document.body.classList.toggle('light',!isDark);document.getElementById('theme-btn').textContent=isDark?'🌙':'☀️';}
+function toggleTheme(){isDark=!isDark;document.body.classList.toggle('light',!isDark);document.getElementById('theme-btn').textContent=isDark?'🌙':'🔆';}
 function toggleDrawer(){document.getElementById('drawer').classList.toggle('open');document.getElementById('drawer-overlay').classList.toggle('open');}
 function closeDrawer(){document.getElementById('drawer').classList.remove('open');document.getElementById('drawer-overlay').classList.remove('open');}
 
@@ -283,7 +283,7 @@ function playAudio(){
   const w=SECTIONS[curSec].words[curIdx];if(!w)return;
   const btn=document.getElementById('sound-btn');
   if(window.speechSynthesis)speechSynthesis.cancel();
-  btn.textContent='⏳';
+  btn.textContent='✨';
   const utt=new SpeechSynthesisUtterance(w.e.trim());
   utt.lang='en-US';utt.rate=0.85;utt.pitch=1;utt.volume=1;
   function speak(){
@@ -294,9 +294,9 @@ function playAudio(){
     if(!best)best=voices.find(v=>v.lang==='en-US'&&!v.name.toLowerCase().includes('compact'));
     if(!best)best=voices.find(v=>v.lang.startsWith('en'));
     if(best)utt.voice=best;
-    utt.onstart=()=>{btn.textContent='🔊';};
-    utt.onend=()=>{btn.textContent='🔊';};
-    utt.onerror=()=>{btn.textContent='🔊';};
+    utt.onstart=()=>{btn.textContent='✨';};
+    utt.onend=()=>{btn.textContent='✨';};
+    utt.onerror=()=>{btn.textContent='✨';};
     speechSynthesis.speak(utt);
   }
   speechSynthesis.getVoices().length>0?speak():(speechSynthesis.onvoiceschanged=speak);
