@@ -254,9 +254,15 @@
       "v": "Giờ nghỉ trưa"
     },
     {
-      "e": "Maternity/ paternity leave",
-      "n": "/məˈtɜːrnəti / pəˈtɜːrnəti liːv/",
-      "v": "Nghỉ thai sản/ nghỉ phép vợ sinh"
+      "e": "Maternity",
+      "n": "/məˈtɜːrnəti/",
+      "v": "Nghỉ thai sản"
+    },
+   
+    {
+      "e": "Paternity leave",
+      "n": "/pəˈtɜːrnəti liːv/",
+      "v": "Nghỉ phép vợ sinh"
     },
     {
       "e": "Mentor",
