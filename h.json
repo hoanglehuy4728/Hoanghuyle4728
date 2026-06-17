@@ -1,5 +1,2505 @@
 [
   {
+    "title": "Top 500 từ vựng thông dụng nhất trong tiếng Anh",
+    "words": [
+      {
+        "e": "he (pron)",
+        "n": "/hiː/",
+        "v": "Anh ấy, ông ấy, cậu ấy"
+      },
+      {
+        "e": "be (v)",
+        "n": "/biː/",
+        "v": "Là, ở, có"
+      },
+      {
+        "e": "of (prep)",
+        "n": "/ʌv/",
+        "v": "Của"
+      },
+      {
+        "e": "and (conj)",
+        "n": "/ænd/",
+        "v": "Và"
+      },
+      {
+        "e": "a (art)",
+        "n": "/ə/",
+        "v": "Một (dùng trước danh từ không đếm được)"
+      },
+      {
+        "e": "to (prep)",
+        "n": "/tuː/",
+        "v": "Đến, để"
+      },
+      {
+        "e": "in (prep)",
+        "n": "/ɪn/",
+        "v": "Trong"
+      },
+      {
+        "e": "have (v)",
+        "n": "/hæv/",
+        "v": "Có (dạng động từ \"to have\")"
+      },
+      {
+        "e": "it (pron)",
+        "n": "/ɪt/",
+        "v": "Nó"
+      },
+      {
+        "e": "about (prep)",
+        "n": "/əˈbaʊt/",
+        "v": "Khoảng, về, về việc"
+      },
+      {
+        "e": "than (conj)",
+        "n": "/ðæn/",
+        "v": "Hơn"
+      },
+      {
+        "e": "into (prep)",
+        "n": "/ˈɪntuː/",
+        "v": "Vào (chỗ nào đó)"
+      },
+      {
+        "e": "could (v)",
+        "n": "/kʊd/",
+        "v": "Có thể (dạng quá khứ của \"can\")"
+      },
+      {
+        "e": "state (n/v)",
+        "n": "/steɪt/",
+        "v": "Tiểu bang, trạng thái; nêu lên, tuyên bố"
+      },
+      {
+        "e": "only (adj/adv)",
+        "n": "/ˈoʊn.li/",
+        "v": "Chỉ, chỉ có"
+      },
+      {
+        "e": "new (adj)",
+        "n": "/nuː/",
+        "v": "Mới"
+      },
+      {
+        "e": "year (n)",
+        "n": "/jɪr/",
+        "v": "Năm"
+      },
+      {
+        "e": "some (det/pron)",
+        "n": "/sʌm/",
+        "v": "Một ít, một số; một số"
+      },
+      {
+        "e": "take (v)",
+        "n": "/teɪk/",
+        "v": "Lấy, chọn, tiêu thụ"
+      },
+      {
+        "e": "because (conj)",
+        "n": "/bɪˈkɒz/",
+        "v": "Bởi vì"
+      },
+      {
+        "e": "good (adj)",
+        "n": "/ɡʊd/",
+        "v": "Tốt"
+      },
+      {
+        "e": "each (det)",
+        "n": "/iːtʃ/",
+        "v": "Mỗi"
+      },
+      {
+        "e": "those (pron)",
+        "n": "/ðoʊz/",
+        "v": "Những"
+      },
+      {
+        "e": "feel (v)",
+        "n": "/fiːl/",
+        "v": "Cảm thấy"
+      },
+      {
+        "e": "seem (v)",
+        "n": "/siːm/",
+        "v": "Dường như"
+      },
+      {
+        "e": "how (adv)",
+        "n": "/haʊ/",
+        "v": "Như thế nào"
+      },
+      {
+        "e": "high (adj)",
+        "n": "/haɪ/",
+        "v": "Cao"
+      },
+      {
+        "e": "too (adv)",
+        "n": "/tuː/",
+        "v": "Quá"
+      },
+      {
+        "e": "place (n)",
+        "n": "/pleɪs/",
+        "v": "Nơi, chỗ"
+      },
+      {
+        "e": "that (pron/conj)",
+        "n": "/ðæt/",
+        "v": "Đó; rằng"
+      },
+      {
+        "e": "for (prep)",
+        "n": "/fɔːr/",
+        "v": "Cho, vì"
+      },
+      {
+        "e": "they (pron)",
+        "n": "/ðeɪ/",
+        "v": "Họ"
+      },
+      {
+        "e": "I (pron)",
+        "n": "/aɪ/",
+        "v": "Tôi"
+      },
+      {
+        "e": "with (prep)",
+        "n": "/wɪð/",
+        "v": "Với"
+      },
+      {
+        "e": "as (conj)",
+        "n": "/æz/",
+        "v": "Như, vì"
+      },
+      {
+        "e": "not (adv)",
+        "n": "/nɒt/",
+        "v": "Không"
+      },
+      {
+        "e": "on (prep)",
+        "n": "/ɒn/",
+        "v": "Trên"
+      },
+      {
+        "e": "she (pron)",
+        "n": "/ʃiː/",
+        "v": "Cô ấy, bà ấy, cô ta"
+      },
+      {
+        "e": "at (prep)",
+        "n": "/æt/",
+        "v": "Tại"
+      },
+      {
+        "e": "come (v)",
+        "n": "/kʌm/",
+        "v": "Đến, đến thăm"
+      },
+      {
+        "e": "these (det)",
+        "n": "/ðiːz/",
+        "v": "Những (dùng trước danh từ đếm được)"
+      },
+      {
+        "e": "know (v)",
+        "n": "/noʊ/",
+        "v": "Biết"
+      },
+      {
+        "e": "see (v)",
+        "n": "/si/",
+        "v": "Thấy"
+      },
+      {
+        "e": "use (v/n)",
+        "n": "/juːz/",
+        "v": "Sử dụng; cách dùng, lợi ích"
+      },
+      {
+        "e": "get (v)",
+        "n": "/ɡet/",
+        "v": "Nhận, lấy, đạt được"
+      },
+      {
+        "e": "like (v/prep)",
+        "n": "/laɪk/",
+        "v": "Thích; giống, như"
+      },
+      {
+        "e": "then (adv)",
+        "n": "/ðen/",
+        "v": "Sau đó"
+      },
+      {
+        "e": "first (adj/adv)",
+        "n": "/fɜːrst/",
+        "v": "Đầu tiên"
+      },
+      {
+        "e": "any (det/pron)",
+        "n": "/ˈɛni/",
+        "v": "Bất kỳ; bất cứ ai, bất cứ điều gì"
+      },
+      {
+        "e": "liIle (adj/n)",
+        "n": "/ˈlɪtl/",
+        "v": "Nhỏ, một ít; đứa bé, nhỏ bé"
+      },
+      {
+        "e": "world (n)",
+        "n": "/wɜːrld/",
+        "v": "Thế giới"
+      },
+      {
+        "e": "very (adv)",
+        "n": "/ˈver.i/",
+        "v": "Rất"
+      },
+      {
+        "e": "still (adv)",
+        "n": "/stɪl/",
+        "v": "Vẫn, vẫn còn"
+      },
+      {
+        "e": "nation (n)",
+        "n": "/ˈneɪ.ʃən/",
+        "v": "Quốc gia"
+      },
+      {
+        "e": "hand (n)",
+        "n": "/hænd/",
+        "v": "Bàn tay"
+      },
+      {
+        "e": "old (adj)",
+        "n": "/oʊld/",
+        "v": "Cũ, già"
+      },
+      {
+        "e": "life (n)",
+        "n": "/laɪf/",
+        "v": "Cuộc sống"
+      },
+      {
+        "e": "tell (v)",
+        "n": "/tel/",
+        "v": "Kể, nói"
+      },
+      {
+        "e": "write (v)",
+        "n": "/raɪt/",
+        "v": "Viết"
+      },
+      {
+        "e": "by (prep)",
+        "n": "/baɪ/",
+        "v": "Bởi"
+      },
+      {
+        "e": "this (det/pron)",
+        "n": "/ðɪs/",
+        "v": "Này"
+      },
+      {
+        "e": "we (pron)",
+        "n": "/wiː/",
+        "v": "Chúng tôi, chúng mình"
+      },
+      {
+        "e": "you (pron)",
+        "n": "/juː/",
+        "v": "Bạn (ngôi thứ hai số ít)"
+      },
+      {
+        "e": "do (v)",
+        "n": "/duː/",
+        "v": "Làm, thực hiện"
+      },
+      {
+        "e": "but (conj)",
+        "n": "/bət/",
+        "v": "Nhưng, tuy nhiên"
+      },
+      {
+        "e": "from (prep)",
+        "n": "/frʌm/",
+        "v": "Từ, từ bên ngoài"
+      },
+      {
+        "e": "or (conj)",
+        "n": "/ɔːr/",
+        "v": "Hoặc"
+      },
+      {
+        "e": "which (pron)",
+        "n": "/wɪtʃ/",
+        "v": "Mà, một phần của, cái nào"
+      },
+      {
+        "e": "one (num/pron)",
+        "n": "/wʌn/",
+        "v": "Một; một người"
+      },
+      {
+        "e": "work (n/v)",
+        "n": "/wɜːrk/",
+        "v": "Công việc; làm việc"
+      },
+      {
+        "e": "now (adv)",
+        "n": "/naʊ/",
+        "v": "Bây giờ"
+      },
+      {
+        "e": "may (v)",
+        "n": "/meɪ/",
+        "v": "Có thể"
+      },
+      {
+        "e": "such (adj)",
+        "n": "/sʌtʃ/",
+        "v": "Như vậy, như thế"
+      },
+      {
+        "e": "give (v)",
+        "n": "/ɡɪv/",
+        "v": "Cho"
+      },
+      {
+        "e": "over (prep/adv)",
+        "n": "/ˈoʊ.vɚ/",
+        "v": "Trên, hơn; quá trình kết thúc"
+      },
+      {
+        "e": "think (v)",
+        "n": "/θɪŋk/",
+        "v": "Nghĩ, suy nghĩ"
+      },
+      {
+        "e": "most (det/adj/adv)",
+        "n": "/moʊst/",
+        "v": "Hầu hết, phần lớn; hầu hết, gần như"
+      },
+      {
+        "e": "even (adv)",
+        "n": "/ˈiːv.ən/",
+        "v": "Thậm chí"
+      },
+      {
+        "e": "find (v)",
+        "n": "/faɪnd/",
+        "v": "Tìm"
+      },
+      {
+        "e": "become (v)",
+        "n": "/bɪˈkʌm/",
+        "v": "Trở thành, trở nên"
+      },
+      {
+        "e": "here (adv)",
+        "n": "/hɪr/",
+        "v": "Ở đây"
+      },
+      {
+        "e": "show (v)",
+        "n": "/ʃoʊ/",
+        "v": "Chỉ, hiển thị"
+      },
+      {
+        "e": "house (n)",
+        "n": "/haʊs/",
+        "v": "Nhà"
+      },
+      {
+        "e": "both (det/conj)",
+        "n": "/boʊθ/",
+        "v": "Cả hai, cả"
+      },
+      {
+        "e": "between (prep)",
+        "n": "/bɪˈtwiːn/",
+        "v": "Giữa"
+      },
+      {
+        "e": "need (v/n)",
+        "n": "/niːd/",
+        "v": "Cần; nhu cầu"
+      },
+      {
+        "e": "mean (v/adj)",
+        "n": "/miːn/",
+        "v": "Có nghĩa, ý nghĩa; tầm quan trọng"
+      },
+      {
+        "e": "call (v/n)",
+        "n": "/kɔːl/",
+        "v": "Gọi điện thoại; cuộc gọi điện"
+      },
+      {
+        "e": "develop (v)",
+        "n": "/dɪˈvel.əp/",
+        "v": "Phát triển, phát triển"
+      },
+      {
+        "e": "would (modal v)",
+        "n": "/wʊd/",
+        "v": "Sẽ, sẽ làm (dạng quá khứ của \"will\")"
+      },
+      {
+        "e": "all (det/pron/adv)",
+        "n": "/ɔːl/",
+        "v": "Tất cả, mọi người; hoàn toàn"
+      },
+      {
+        "e": "will (modal v)",
+        "n": "/wɪl/",
+        "v": "Sẽ (dùng để diễn tả tương lai)"
+      },
+      {
+        "e": "there (adv/pron)",
+        "n": "/ðer/",
+        "v": "Có, ở đó; có một số"
+      },
+      {
+        "e": "say (v)",
+        "n": "/seɪ/",
+        "v": "Nói"
+      },
+      {
+        "e": "who (pron)",
+        "n": "/huː/",
+        "v": "Ai"
+      },
+      {
+        "e": "make (v)",
+        "n": "/meɪk/",
+        "v": "Tạo, làm"
+      },
+      {
+        "e": "when (adv/conj)",
+        "n": "/wɛn/",
+        "v": "Khi"
+      },
+      {
+        "e": "can (modal v)",
+        "n": "/kæn/",
+        "v": "Có thể"
+      },
+      {
+        "e": "more (adj/adv)",
+        "n": "/mɔːr/",
+        "v": "Hơn, hơn nữa"
+      },
+      {
+        "e": "day (n)",
+        "n": "/deɪ/",
+        "v": "Ngày"
+      },
+      {
+        "e": "also (adv)",
+        "n": "/ˈɔːl.soʊ/",
+        "v": "Cũng, cũng như"
+      },
+      {
+        "e": "aJer (prep/conj)",
+        "n": "/ˈæ›ər/",
+        "v": "Sau, sau khi"
+      },
+      {
+        "e": "way (n)",
+        "n": "/weɪ/",
+        "v": "Cách, lối đi"
+      },
+      {
+        "e": "many (det/adj)",
+        "n": "/ˈmɛni/",
+        "v": "Nhiều"
+      },
+      {
+        "e": "must (modal v)",
+        "n": "/mʌst/",
+        "v": "Phải"
+      },
+      {
+        "e": "look (v)",
+        "n": "/lʊk/",
+        "v": "Nhìn, hướng nhìn"
+      },
+      {
+        "e": "before (prep/conj)",
+        "n": "/bɪˈfɔːr/",
+        "v": "Trước, trước khi"
+      },
+      {
+        "e": "great (adj)",
+        "n": "/ɡreɪt/",
+        "v": "Lớn, tuyệt vời"
+      },
+      {
+        "e": "back (adv/n)",
+        "n": "/bæk/",
+        "v": "Phía sau, lưng; lưng"
+      },
+      {
+        "e": "under (prep)",
+        "n": "/ˈʌndər/",
+        "v": "Dưới"
+      },
+      {
+        "e": "last (adj/n)",
+        "n": "/læst/",
+        "v": "Cuối cùng, cuối cùng"
+      },
+      {
+        "e": "right (adj/adv/n)",
+        "n": "/raɪt/",
+        "v": "Đúng, đúng vậy; bên phải"
+      },
+      {
+        "e": "move (v/n)",
+        "n": "/muːv/",
+        "v": "Di chuyển, chuyển động"
+      },
+      {
+        "e": "thing (n)",
+        "n": "/θɪŋ/",
+        "v": "Điều, sự việc"
+      },
+      {
+        "e": "general (adj/n)",
+        "n": "/ˈdʒɛnərəl/",
+        "v": "Tổng quát, tổng thể; tướng"
+      },
+      {
+        "e": "school (n)",
+        "n": "/skuːl/",
+        "v": "Trường học"
+      },
+      {
+        "e": "never (adv)",
+        "n": "/ˈnɛvər/",
+        "v": "Không bao giờ"
+      },
+      {
+        "e": "same (adj/pron)",
+        "n": "/seɪm/",
+        "v": "Giống nhau, cùng một"
+      },
+      {
+        "e": "another (det/pron/adj)",
+        "n": "/əˈnʌðər/",
+        "v": "Một người/khác, một cái/khác"
+      },
+      {
+        "e": "if (conj)",
+        "n": "/ɪf/",
+        "v": "Nếu"
+      },
+      {
+        "e": "no (det/adv)",
+        "n": "/noʊ/",
+        "v": "Không; không có"
+      },
+      {
+        "e": "man (n)",
+        "n": "/mæn/",
+        "v": "Người đàn ông"
+      },
+      {
+        "e": "out (adv/prep)",
+        "n": "/aʊt/",
+        "v": "Ra ngoài; hết, hết sạch"
+      },
+      {
+        "e": "other (adj/pron)",
+        "n": "/ˈʌðər/",
+        "v": "Khác; người/khác"
+      },
+      {
+        "e": "so (adv/conj)",
+        "n": "/soʊ/",
+        "v": "Vì vậy; như vậy"
+      },
+      {
+        "e": "what (pron)",
+        "n": "/wɑːt/",
+        "v": "Gì, cái gì"
+      },
+      {
+        "e": "time (n)",
+        "n": "/taɪm/",
+        "v": "Thời gian"
+      },
+      {
+        "e": "up (adv/prep)",
+        "n": "/ʌp/",
+        "v": "Lên, lên trên"
+      },
+      {
+        "e": "go (v)",
+        "n": "/ɡoʊ/",
+        "v": "Đi"
+      },
+      {
+        "e": "through (prep/adv)",
+        "n": "/θruː/",
+        "v": "Qua, xuyên qua"
+      },
+      {
+        "e": "long (adj/adv)",
+        "n": "/lɔːŋ/",
+        "v": "Lâu, lâu dài"
+      },
+      {
+        "e": "where (adv/pron)",
+        "n": "/wɛr/",
+        "v": "Ở đâu"
+      },
+      {
+        "e": "much (det/adv)",
+        "n": "/mʌtʃ/",
+        "v": "Nhiều"
+      },
+      {
+        "e": "should (modal v)",
+        "n": "/ʃʊd/",
+        "v": "Nên"
+      },
+      {
+        "e": "well (adv)",
+        "n": "/wɛl/",
+        "v": "Tốt, khỏe mạnh"
+      },
+      {
+        "e": "people (n)",
+        "n": "/ˈpiːpl/",
+        "v": "Người, mọi người"
+      },
+      {
+        "e": "down (adv/prep)",
+        "n": "/daʊn/",
+        "v": "Xuống, xuống dưới"
+      },
+      {
+        "e": "own (adj/pron)",
+        "n": "/oʊn/",
+        "v": "Riêng, của riêng mình"
+      },
+      {
+        "e": "just (adv/adj)",
+        "n": "/dʒʌst/",
+        "v": "Chỉ, vừa; công bằng, đúng"
+      },
+      {
+        "e": "begin (v)",
+        "n": "/bɪˈɡɪn/",
+        "v": "Bắt đầu"
+      },
+      {
+        "e": "while (n/conj)",
+        "n": "/waɪl/",
+        "v": "Khoảng thời gian; trong khi"
+      },
+      {
+        "e": "number (n)",
+        "n": "/ˈnʌm.bər/",
+        "v": "Số, con số"
+      },
+      {
+        "e": "part (n)",
+        "n": "/pɑːrt/",
+        "v": "Phần, bộ phận"
+      },
+      {
+        "e": "turn (v/n)",
+        "n": "/tɜːrn/",
+        "v": "Quay, xoay; lượt, sự xoay"
+      },
+      {
+        "e": "real (adj)",
+        "n": "/riːl/",
+        "v": "Thực sự, thật sự"
+      },
+      {
+        "e": "leave (v)",
+        "n": "/liːv/",
+        "v": "Rời đi, để lại"
+      },
+      {
+        "e": "might (modal v)",
+        "n": "/maɪt/",
+        "v": "Có thể (dạng quá khứ của \"may\")"
+      },
+      {
+        "e": "want (v)",
+        "n": "/wɑːnt/",
+        "v": "Muốn, mong muốn"
+      },
+      {
+        "e": "point (n/v)",
+        "n": "/pɔɪnt/",
+        "v": "Điểm; chỉ, chỉ vào"
+      },
+      {
+        "e": "form (n/v)",
+        "n": "/fɔːrm/",
+        "v": "Hình thức, dạng; tạo thành"
+      },
+      {
+        "e": "off (adv/prep)",
+        "n": "/ɒf/",
+        "v": "Tắt, ra khỏi; khỏi"
+      },
+      {
+        "e": "child (n)",
+        "n": "/tʃaɪld/",
+        "v": "Đứa trẻ"
+      },
+      {
+        "e": "few (det/adj)",
+        "n": "/fjuː/",
+        "v": "Một vài, ít; ít"
+      },
+      {
+        "e": "small (adj)",
+        "n": "/smɔːl/",
+        "v": "Nhỏ"
+      },
+      {
+        "e": "since (prep/conj)",
+        "n": "/sɪns/",
+        "v": "Kể từ khi, vì"
+      },
+      {
+        "e": "against (prep)",
+        "n": "/əˈɡɛnst/",
+        "v": "Chống lại, phản đối"
+      },
+      {
+        "e": "ask (v)",
+        "n": "/æsk/",
+        "v": "Hỏi, yêu cầu"
+      },
+      {
+        "e": "late (adj/adv)",
+        "n": "/leɪt/",
+        "v": "Muộn, chậm; muộn, chậm"
+      },
+      {
+        "e": "home (n/adv)",
+        "n": "/hoʊm/",
+        "v": "Nhà, quê hương; về nhà"
+      },
+      {
+        "e": "city (n)",
+        "n": "/ˈsɪti/",
+        "v": "Thành phố"
+      },
+      {
+        "e": "put (v)",
+        "n": "/pʊt/",
+        "v": "Đặt, để"
+      },
+      {
+        "e": "close (adj/v/adv)",
+        "n": "/kloʊz/",
+        "v": "Gần, đóng lại; sát, gần"
+      },
+      {
+        "e": "case (n)",
+        "n": "/keɪs/",
+        "v": "Trường hợp, ¤nh huống"
+      },
+      {
+        "e": "force (n/v)",
+        "n": "/fɔːrs/",
+        "v": "Lực, ép buộc; ép, bắt buộc"
+      },
+      {
+        "e": "meet (v)",
+        "n": "/miːt/",
+        "v": "Gặp gỡ"
+      },
+      {
+        "e": "once (adv)",
+        "n": "/wʌns/",
+        "v": "Một lần, lúc nào đó"
+      },
+      {
+        "e": "water (n)",
+        "n": "/ˈwɔːtər/",
+        "v": "Nước"
+      },
+      {
+        "e": "upon (prep)",
+        "n": "/əˈpɒn/",
+        "v": "Trên, trên đầu"
+      },
+      {
+        "e": "war (n)",
+        "n": "/wɔːr/",
+        "v": "Chiến tranh"
+      },
+      {
+        "e": "though (conj)",
+        "n": "/ðoʊ/",
+        "v": "Mặc dù, tuy nhiên"
+      },
+      {
+        "e": "young (adj/n)",
+        "n": "/jʌŋ/",
+        "v": "Trẻ, trẻ tuổi; người trẻ"
+      },
+      {
+        "e": "less (det/adj)",
+        "n": "/lɛs/",
+        "v": "Ít hơn, không"
+      },
+      {
+        "e": "enough (det/adj/adv)",
+        "n": "/ɪˈnʌf/",
+        "v": "Đủ, đủ; đủ sức"
+      },
+      {
+        "e": "almost (adv)",
+        "n": "/ˈɔːl.moʊst/",
+        "v": "Gần như"
+      },
+      {
+        "e": "read (v)",
+        "n": "/riːd/",
+        "v": "Đọc"
+      },
+      {
+        "e": "include (v)",
+        "n": "/ɪnˈkluːd/",
+        "v": "Bao gồm"
+      },
+      {
+        "e": "president (n)",
+        "n": "/ˈprɛzɪdənt/",
+        "v": "Tổng thống"
+      },
+      {
+        "e": "nothing (pron)",
+        "n": "/ˈnʌθɪŋ/",
+        "v": "Không gì, không có gì"
+      },
+      {
+        "e": "yet (adv/conj)",
+        "n": "/jɛt/",
+        "v": "Vẫn, chưa; nhưng mà"
+      },
+      {
+        "e": "simple (adj)",
+        "n": "/ˈsɪmpl/",
+        "v": "Đơn giản"
+      },
+      {
+        "e": "within (prep/adv)",
+        "n": "/wɪˈðɪn/",
+        "v": "Trong, bên trong; trong vòng"
+      },
+      {
+        "e": "love (n/v)",
+        "n": "/lʌv/",
+        "v": "Tình yêu; yêu"
+      },
+      {
+        "e": "human (adj/n)",
+        "n": "/ˈhjuː.mən/",
+        "v": "Con người, nhân loại"
+      },
+      {
+        "e": "along (prep/adv)",
+        "n": "/əˈlɔːŋ/",
+        "v": "Dọc theo, theo; cùng"
+      },
+      {
+        "e": "appear (v)",
+        "n": "/əˈpɪr/",
+        "v": "Xuất hiện, hiện ra"
+      },
+      {
+        "e": "doctor (n)",
+        "n": "/ˈdɑːktər/",
+        "v": "Bác sĩ"
+      },
+      {
+        "e": "believe (v)",
+        "n": "/bɪˈliːv/",
+        "v": "Tin tưởng, tin"
+      },
+      {
+        "e": "speak (v)",
+        "n": "/spiːk/",
+        "v": "Nói, nói chuyện"
+      },
+      {
+        "e": "active (adj)",
+        "n": "/ˈæktɪv/",
+        "v": "Hoạt động, tích cực"
+      },
+      {
+        "e": "interest (n/v)",
+        "n": "/ˈɪntrəst/",
+        "v": "Sự quan tâm; làm quan tâm"
+      },
+      {
+        "e": "large (adj)",
+        "n": "/lɑːrdʒ/",
+        "v": "Lớn"
+      },
+      {
+        "e": "person (n)",
+        "n": "/ˈpɜːrsən/",
+        "v": "Người"
+      },
+      {
+        "e": "end (n/v)",
+        "n": "/ɛnd/",
+        "v": "Kết thúc, kết cục; kết thúc"
+      },
+      {
+        "e": "open (adj/v)",
+        "n": "/ˈoʊpən/",
+        "v": "Mở, mở ra; mở"
+      },
+      {
+        "e": "public (adj)",
+        "n": "/ˈpʌblɪk/",
+        "v": "Công cộng, dành cho công chúng"
+      },
+      {
+        "e": "follow (v)",
+        "n": "/ˈfɑːloʊ/",
+        "v": "Theo, theo sau"
+      },
+      {
+        "e": "during (prep)",
+        "n": "/ˈdʊrɪŋ/",
+        "v": "Trong suốt, trong thời gian"
+      },
+      {
+        "e": "present (adj/n/v)",
+        "n": "/ˈprɛzənt/",
+        "v": "Hiện tại, hiện tại; trình bày"
+      },
+      {
+        "e": "without (prep)",
+        "n": "/wɪˈðaʊt/",
+        "v": "Không có, thiếu"
+      },
+      {
+        "e": "build (v/n)",
+        "n": "/bɪld/",
+        "v": "Xây dựng, xây; công trình xây dựng"
+      },
+      {
+        "e": "hear (v)",
+        "n": "/hɪr/",
+        "v": "Nghe, nghe thấy"
+      },
+      {
+        "e": "light (n/adj)",
+        "n": "/laɪt/",
+        "v": "Ánh sáng; nhẹ, nhẹ nhàng"
+      },
+      {
+        "e": "unite (v)",
+        "n": "/juːˈnaɪt/",
+        "v": "Kết hợp, đoàn kết"
+      },
+      {
+        "e": "live (v/adj)",
+        "n": "/lɪv/",
+        "v": "Sống; sống, thực sự"
+      },
+      {
+        "e": "every (det)",
+        "n": "/ˈɛvri/",
+        "v": "Mỗi, mỗi ngày"
+      },
+      {
+        "e": "country (n)",
+        "n": "/ˈkʌntri/",
+        "v": "Quốc gia"
+      },
+      {
+        "e": "bring (v)",
+        "n": "/brɪŋ/",
+        "v": "Mang đến, đưa đến"
+      },
+      {
+        "e": "center (n/v)",
+        "n": "/ˈsɛntər/",
+        "v": "Trung tâm, trung tâm"
+      },
+      {
+        "e": "let (v)",
+        "n": "/lɛt/",
+        "v": "Cho phép, để"
+      },
+      {
+        "e": "beIer (adj/adv)",
+        "n": "/ˈbɛtər/",
+        "v": "Tốt hơn, tốt hơn"
+      },
+      {
+        "e": "big (adj)",
+        "n": "/bɪɡ/",
+        "v": "Lớn"
+      },
+      {
+        "e": "boy (n)",
+        "n": "/bɔɪ/",
+        "v": "Bé trai, thiếu niên"
+      },
+      {
+        "e": "cost (v/n)",
+        "n": "/kɔːst/",
+        "v": "Tốn, giá; chi phí"
+      },
+      {
+        "e": "business (n)",
+        "n": "/ˈbɪznəs/",
+        "v": "Kinh doanh"
+      },
+      {
+        "e": "value (n/v)",
+        "n": "/ˈvæljuː/",
+        "v": "Giá trị; đánh giá, xem trọng"
+      },
+      {
+        "e": "second (num/n)",
+        "n": "/ˈsɛkənd/",
+        "v": "Thứ hai; giây"
+      },
+      {
+        "e": "why (adv/conj)",
+        "n": "/waɪ/",
+        "v": "Tại sao, tại vì"
+      },
+      {
+        "e": "clear (adj/v)",
+        "n": "/klɪr/",
+        "v": "Rõ ràng, sáng sủa; làm cho sạch"
+      },
+      {
+        "e": "expect (v)",
+        "n": "/ɪkˈspɛkt/",
+        "v": "Mong đợi, dự đoán"
+      },
+      {
+        "e": "student (n)",
+        "n": "/ˈstuːdənt/",
+        "v": "Sinh viên, học sinh"
+      },
+      {
+        "e": "month (n)",
+        "n": "/mʌnθ/",
+        "v": "Tháng"
+      },
+      {
+        "e": "drive (v/n)",
+        "n": "/draɪv/",
+        "v": "Lái xe; sự lái xe"
+      },
+      {
+        "e": "concern (n/v)",
+        "n": "/kənˈsɜrn/",
+        "v": "Mối quan tâm; làm lo lắng"
+      },
+      {
+        "e": "best (adj)",
+        "n": "/bɛst/",
+        "v": "Tốt nhất"
+      },
+      {
+        "e": "door (n)",
+        "n": "/dɔːr/",
+        "v": "Cửa"
+      },
+      {
+        "e": "hope (n/v)",
+        "n": "/hoʊp/",
+        "v": "Hy vọng"
+      },
+      {
+        "e": "example (n)",
+        "n": "/ɪɡˈzæmpəl/",
+        "v": "Ví dụ"
+      },
+      {
+        "e": "inform (v)",
+        "n": "/ɪnˈfɔrm/",
+        "v": "Thông báo, thông tin"
+      },
+      {
+        "e": "body (n)",
+        "n": "/ˈbɑːdi/",
+        "v": "Cơ thể"
+      },
+      {
+        "e": "again (adv)",
+        "n": "/əˈɡɛn/",
+        "v": "Lại, một lần nữa"
+      },
+      {
+        "e": "hold (v)",
+        "n": "/hoʊld/",
+        "v": "Giữ, cầm"
+      },
+      {
+        "e": "govern (v)",
+        "n": "/ˈɡəvərn/",
+        "v": "Cai trị, quản lý"
+      },
+      {
+        "e": "around (adv/prep)",
+        "n": "/əˈraʊnd/",
+        "v": "Xung quanh, xung quanh"
+      },
+      {
+        "e": "possible (adj)",
+        "n": "/ˈpɑːsəbl/",
+        "v": "Có thể, có khả năng"
+      },
+      {
+        "e": "head (n/v)",
+        "n": "/hɛd/",
+        "v": "Đầu, người đứng đầu; hướng, điều hướng"
+      },
+      {
+        "e": "consider (v)",
+        "n": "/kənˈsɪdər/",
+        "v": "Xem xét, cân nhắc"
+      },
+      {
+        "e": "word (n)",
+        "n": "/wɜːrd/",
+        "v": "Từ, từ ngữ"
+      },
+      {
+        "e": "program (n)",
+        "n": "/ˈproʊɡræm/",
+        "v": "Chương trình, kế hoạch"
+      },
+      {
+        "e": "problem (n)",
+        "n": "/ˈprɑːbləm/",
+        "v": "Vấn đề"
+      },
+      {
+        "e": "side (n)",
+        "n": "/saɪd/",
+        "v": "Bên, phía"
+      },
+      {
+        "e": "try (v)",
+        "n": "/traɪ/",
+        "v": "Thử, cố gắng"
+      },
+      {
+        "e": "provide (v)",
+        "n": "/prəˈvaɪd/",
+        "v": "Cung cấp"
+      },
+      {
+        "e": "continue (v)",
+        "n": "/kənˈtɪnjuː/",
+        "v": "Tiếp tục"
+      },
+      {
+        "e": "name (n/v)",
+        "n": "/neɪm/",
+        "v": "Tên, đặt tên"
+      },
+      {
+        "e": "certain (adj)",
+        "n": "/ˈsɜːrtən/",
+        "v": "Chắc chắn"
+      },
+      {
+        "e": "power (n)",
+        "n": "/ˈpaʊər/",
+        "v": "Sức mạnh, quyền lực"
+      },
+      {
+        "e": "pay (v/n)",
+        "n": "/peɪ/",
+        "v": "Trả tiền, lương; sự trả tiền"
+      },
+      {
+        "e": "result (n/v)",
+        "n": "/rɪˈzʌlt/",
+        "v": "Kết quả"
+      },
+      {
+        "e": "question (n/v)",
+        "n": "/ˈkwɛstʃən/",
+        "v": "Câu hỏi"
+      },
+      {
+        "e": "family (n)",
+        "n": "/ˈfæməli/",
+        "v": "Gia đình"
+      },
+      {
+        "e": "complete (adj/v)",
+        "n": "/kəmˈpliːt/",
+        "v": "Hoàn thành, đầy đủ"
+      },
+      {
+        "e": "act (n/v)",
+        "n": "/ækt/",
+        "v": "Hành động, diễn viên; hành động, thực hiện"
+      },
+      {
+        "e": "sense (n)",
+        "n": "/sɛns/",
+        "v": "Giác quan, ý thức"
+      },
+      {
+        "e": "mind (n/v)",
+        "n": "/maɪnd/",
+        "v": "Tâm trí, trí óc; quan tâm, chú ý"
+      },
+      {
+        "e": "experience (n/v)",
+        "n": "/ɪksˈpɪəriəns/",
+        "v": "Kinh nghiệm, trải nghiệm"
+      },
+      {
+        "e": "art (n)",
+        "n": "/ɑːrt/",
+        "v": "Nghệ thuật, nghệ sĩ"
+      },
+      {
+        "e": "next (adj/adv)",
+        "n": "/nɛkst/",
+        "v": "Tiếp theo, kế tiếp"
+      },
+      {
+        "e": "near (adj/adv)",
+        "n": "/nɪr/",
+        "v": "Gần, gần gũi"
+      },
+      {
+        "e": "direct (adj/v)",
+        "n": "/dɪˈrɛkt/",
+        "v": "Trực tiếp, chỉ đạo, chỉ định"
+      },
+      {
+        "e": "ever (adv)",
+        "n": "/ˈɛvər/",
+        "v": "Bao giờ, từng, luôn luôn"
+      },
+      {
+        "e": "least (det/adv)",
+        "n": "/liːst/",
+        "v": "Ít nhất, ít nhất cũng phải"
+      },
+      {
+        "e": "probable (adj)",
+        "n": "/ˈprɑːbəbl/",
+        "v": "Có thể xảy ra, có khả năng"
+      },
+      {
+        "e": "understand (v)",
+        "n": "/ˌʌndərˈstænd/",
+        "v": "Hiểu, nắm bắt"
+      },
+      {
+        "e": "reach (v/n)",
+        "n": "/riːʧ/",
+        "v": "Đạt được, tiếp cận; sự tiếp cận"
+      },
+      {
+        "e": "effect (n)",
+        "n": "/ɪˈfɛkt/",
+        "v": "Tác động, kết quả, hiệu ứng"
+      },
+      {
+        "e": "different (adj)",
+        "n": "/ˈdɪfərənt/",
+        "v": "Khác biệt, khác nhau"
+      },
+      {
+        "e": "idea (n)",
+        "n": "/ˈaɪdiə/",
+        "v": "Ý tưởng"
+      },
+      {
+        "e": "whole (adj/n)",
+        "n": "/hoʊl/",
+        "v": "Toàn bộ, tất cả"
+      },
+      {
+        "e": "control (n/v)",
+        "n": "/kənˈtroʊl/",
+        "v": "Sự kiểm soát, điều khiển; kiểm soát, điều khiển"
+      },
+      {
+        "e": "however (adv/conj)",
+        "n": "/haʊˈɛvər/",
+        "v": "Tuy nhiên, tuy thế"
+      },
+      {
+        "e": "lead (v/n)",
+        "n": "/liːd/",
+        "v": "Dẫn dắt, lãnh đạo; chì, chiều"
+      },
+      {
+        "e": "system (n)",
+        "n": "/ˈsɪstəm/",
+        "v": "Hệ thống, hệ thống"
+      },
+      {
+        "e": "set (n/v)",
+        "n": "/sɛt/",
+        "v": "Bộ, tập hợp; đặt, để"
+      },
+      {
+        "e": "order (n/v)",
+        "n": "/ˈɔːrdər/",
+        "v": "Thứ tự, đặt hàng; ra lệnh, yêu cầu"
+      },
+      {
+        "e": "eye (n)",
+        "n": "/aɪ/",
+        "v": "Mắt, con mắt"
+      },
+      {
+        "e": "plan (n/v)",
+        "n": "/plæn/",
+        "v": "Kế hoạch, lên kế hoạch; dự định"
+      },
+      {
+        "e": "run (v/n)",
+        "n": "/rʌn/",
+        "v": "Chạy, điều hành; lượt, phiên"
+      },
+      {
+        "e": "keep (v)",
+        "n": "/kip/",
+        "v": "Giữ, bảo quản"
+      },
+      {
+        "e": "face (n/v)",
+        "n": "/feɪs/",
+        "v": "Mặt, khuôn mặt; đối mặt, đối diện"
+      },
+      {
+        "e": "study (n/v)",
+        "n": "/ˈstʌdi/",
+        "v": "Nghiên cứu, học tập; nghiên cứu, học"
+      },
+      {
+        "e": "woman (n)",
+        "n": "/ˈwʊmən/",
+        "v": "Phụ nữ"
+      },
+      {
+        "e": "member (n)",
+        "n": "/ˈmɛmbər/",
+        "v": "Thành viên"
+      },
+      {
+        "e": "until (prep/conj)",
+        "n": "/ˈʌntɪl/",
+        "v": "Cho đến khi, cho đến"
+      },
+      {
+        "e": "far (adv/adj)",
+        "n": "/fɑːr/",
+        "v": "Xa, xa hơn; xa"
+      },
+      {
+        "e": "night (n)",
+        "n": "/naɪt/",
+        "v": "Đêm"
+      },
+      {
+        "e": "always (adv)",
+        "n": "/ˈɔːlweɪz/",
+        "v": "Luôn luôn"
+      },
+      {
+        "e": "service (n)",
+        "n": "/ˈsɜːrvɪs/",
+        "v": "Dịch vụ"
+      },
+      {
+        "e": "away (adv)",
+        "n": "/əˈweɪ/",
+        "v": "Xa, đi xa"
+      },
+      {
+        "e": "report (n/v)",
+        "n": "/rɪˈpɔrt/",
+        "v": "Báo cáo, bản tin; báo cáo, thông báo"
+      },
+      {
+        "e": "car (n)",
+        "n": "/kɑːr/",
+        "v": "Xe ô tô"
+      },
+      {
+        "e": "law (n)",
+        "n": "/lɔː/",
+        "v": "Luật, pháp luật"
+      },
+      {
+        "e": "industry (n)",
+        "n": "/ˈɪndəstri/",
+        "v": "Công nghiệp"
+      },
+      {
+        "e": "important (adj)",
+        "n": "/ɪmˈpɔːrtənt/",
+        "v": "Quan trọng"
+      },
+      {
+        "e": "girl (n)",
+        "n": "/ɡɜːrl/",
+        "v": "Cô gái"
+      },
+      {
+        "e": "god (n)",
+        "n": "/ɡɒd/",
+        "v": "Thần thánh"
+      },
+      {
+        "e": "several (det)",
+        "n": "/ˈsɛvrəl/",
+        "v": "Một vài, một số"
+      },
+      {
+        "e": "maIer (n/v)",
+        "n": "/ˈmætər/",
+        "v": "Vấn đề, vật chất; quan trọng, có ý nghĩa"
+      },
+      {
+        "e": "usual (adj)",
+        "n": "/ˈjuːʒuəl/",
+        "v": "Thông thường"
+      },
+      {
+        "e": "rather (adv)",
+        "n": "/ˈræðər/",
+        "v": "Hơn là, thích hơn; tương đối, khá"
+      },
+      {
+        "e": "condition (n)",
+        "n": "/kənˈdɪʃən/",
+        "v": "Điều kiện"
+      },
+      {
+        "e": "field (n)",
+        "n": "/fiːld/",
+        "v": "Lĩnh vực, mảng"
+      },
+      {
+        "e": "pass (v/n)",
+        "n": "/pæs/",
+        "v": "Vượt qua, đi qua; bài kiểm tra"
+      },
+      {
+        "e": "fall (v/n)",
+        "n": "/fɔːl/",
+        "v": "Rơi, ngã; mùa thu"
+      },
+      {
+        "e": "note (n/v)",
+        "n": "/noʊt/",
+        "v": "Ghi chú, lưu ý; ghi chú, lưu ý"
+      },
+      {
+        "e": "special (adj)",
+        "n": "/ˈspɛʃəl/",
+        "v": "Đặc biệt"
+      },
+      {
+        "e": "talk (v/n)",
+        "n": "/tɔːk/",
+        "v": "Nói chuyện, trò chuyện; cuộc trò chuyện"
+      },
+      {
+        "e": "particular (adj)",
+        "n": "/pərˈtɪkjələr/",
+        "v": "Cụ thể, riêng biệt"
+      },
+      {
+        "e": "today (n/adv)",
+        "n": "/təˈdeɪ/",
+        "v": "Hôm nay"
+      },
+      {
+        "e": "measure (v/n)",
+        "n": "/ˈmɛʒər/",
+        "v": "Đo lường, đánh giá; đơn vị đo lường"
+      },
+      {
+        "e": "fact (n)",
+        "n": "/fækt/",
+        "v": "Sự thật"
+      },
+      {
+        "e": "group (n)",
+        "n": "/ɡruːp/",
+        "v": "Nhóm"
+      },
+      {
+        "e": "play (v/n)",
+        "n": "/pleɪ/",
+        "v": "Chơi, đóng; sự chơi, sự diễn"
+      },
+      {
+        "e": "stand (v/n)",
+        "n": "/stænd/",
+        "v": "Đứng, đặt; sự đứng, sự đặt"
+      },
+      {
+        "e": "increase (v/n)",
+        "n": "/ɪnˈkriːs/",
+        "v": "Tăng, sự tăng"
+      },
+      {
+        "e": "early (adj/adv)",
+        "n": "/ˈɜːrli/",
+        "v": "Sớm, sớm; sớm hơn"
+      },
+      {
+        "e": "course (n)",
+        "n": "/kɔːrs/",
+        "v": "Khóa học, khóa học; tăng tốc, lộ trình"
+      },
+      {
+        "e": "change (v/n)",
+        "n": "/ʧeɪndʒ/",
+        "v": "Thay đổi, sự thay đổi"
+      },
+      {
+        "e": "help (v/n)",
+        "n": "/hɛlp/",
+        "v": "Giúp đỡ, sự giúp đỡ"
+      },
+      {
+        "e": "line (n)",
+        "n": "/laɪn/",
+        "v": "Dòng, đường; đường thẳng"
+      },
+      {
+        "e": "something (pron)",
+        "n": "/ˈsəmθɪŋ/",
+        "v": "Cái gì đó, cái đó"
+      },
+      {
+        "e": "company (n)",
+        "n": "/ˈkʌmpəni/",
+        "v": "Công ty"
+      },
+      {
+        "e": "week (n)",
+        "n": "/wiːk/",
+        "v": "Tuần"
+      },
+      {
+        "e": "church (n)",
+        "n": "/ʧɜːrtʃ/",
+        "v": "Nhà thờ, nhà thờ"
+      },
+      {
+        "e": "toward (prep/adv)",
+        "n": "/tɔrd/",
+        "v": "Hướng về, hướng đến"
+      },
+      {
+        "e": "start (v/n)",
+        "n": "/stɑːrt/",
+        "v": "Bắt đầu, khởi đầu; sự bắt đầu"
+      },
+      {
+        "e": "social (adj)",
+        "n": "/ˈsoʊʃəl/",
+        "v": "Xã hội, xã hội"
+      },
+      {
+        "e": "room (n)",
+        "n": "/ruːm/",
+        "v": "Phòng"
+      },
+      {
+        "e": "figure (n/v)",
+        "n": "/ˈfɪɡjər/",
+        "v": "Hình, số; tưởng tượng, suy nghĩ"
+      },
+      {
+        "e": "nature (n)",
+        "n": "/ˈneɪtʃər/",
+        "v": "Tự nhiên, bản chất"
+      },
+      {
+        "e": "per (prep)",
+        "n": "/pɜːr/",
+        "v": "Mỗi, mỗi"
+      },
+      {
+        "e": "oJen (adv)",
+        "n": "/ˈɔːfən/",
+        "v": "Thường, thường xuyên"
+      },
+      {
+        "e": "kind (n/adj)",
+        "n": "/kaɪnd/",
+        "v": "Loại, kiểu; tử tế, tốt bụng"
+      },
+      {
+        "e": "among (prep)",
+        "n": "/əˈmʌŋ/",
+        "v": "Trong số, giữa"
+      },
+      {
+        "e": "white (adj/n)",
+        "n": "/waɪt/",
+        "v": "Trắng"
+      },
+      {
+        "e": "reason (n/v)",
+        "n": "/ˈriːzən/",
+        "v": "Lý do, nguyên nhân; lý giải, biện minh"
+      },
+      {
+        "e": "action (n)",
+        "n": "/ˈækʃən/",
+        "v": "Hành động, sự hành động"
+      },
+      {
+        "e": "return (v/n)",
+        "n": "/rɪˈtɜːrn/",
+        "v": "Trở lại, sự trở lại"
+      },
+      {
+        "e": "foot (n)",
+        "n": "/fʊt/",
+        "v": "Chân"
+      },
+      {
+        "e": "care (n/v)",
+        "n": "/kɛr/",
+        "v": "Sự quan tâm, sự chăm sóc; quan tâm, chăm sóc"
+      },
+      {
+        "e": "walk (v/n)",
+        "n": "/wɔːk/",
+        "v": "Đi bộ, sự đi bộ; lối đi, đường đi"
+      },
+      {
+        "e": "teach (v)",
+        "n": "/tiːʧ/",
+        "v": "Dạy, giảng dạy"
+      },
+      {
+        "e": "low (adj/adv)",
+        "n": "/loʊ/",
+        "v": "Thấp, thấp; thấp hơn"
+      },
+      {
+        "e": "hour (n)",
+        "n": "/aʊr/",
+        "v": "Giờ"
+      },
+      {
+        "e": "type (n)",
+        "n": "/taɪp/",
+        "v": "Loại, kiểu"
+      },
+      {
+        "e": "carry (v)",
+        "n": "/ˈkæri/",
+        "v": "Mang, vận chuyển"
+      },
+      {
+        "e": "rate (n/v)",
+        "n": "/reɪt/",
+        "v": "Tỷ lệ, mức độ; đánh giá, xếp loại"
+      },
+      {
+        "e": "remain (v)",
+        "n": "/rɪˈmeɪn/",
+        "v": "Còn lại, duy trì"
+      },
+      {
+        "e": "full (adj)",
+        "n": "/fʊl/",
+        "v": "Đầy đủ, đầy"
+      },
+      {
+        "e": "street (n)",
+        "n": "/striːt/",
+        "v": "Phố, đường"
+      },
+      {
+        "e": "easy (adj)",
+        "n": "/ˈiːzi/",
+        "v": "Dễ, dễ dàng"
+      },
+      {
+        "e": "although (conj)",
+        "n": "/ɔːlˈðoʊ/",
+        "v": "Mặc dù, tuy nhiên"
+      },
+      {
+        "e": "record (n/v)",
+        "n": "/ˈrɛkərd/",
+        "v": "Hồ sơ, ghi chép; ghi lại, ghi chép"
+      },
+      {
+        "e": "sit (v)",
+        "n": "/sɪt/",
+        "v": "Ngồi"
+      },
+      {
+        "e": "determine (v)",
+        "n": "/dɪˈtɜːrmɪn/",
+        "v": "Xác định, quyết định"
+      },
+      {
+        "e": "level (n/v)",
+        "n": "/ˈlɛvəl/",
+        "v": "Mức độ, trình độ; san bằng, làm phẳng"
+      },
+      {
+        "e": "local (adj)",
+        "n": "/ˈloʊkl/",
+        "v": "Địa phương, địa phương"
+      },
+      {
+        "e": "sure (adj)",
+        "n": "/ʃʊr/",
+        "v": "Chắc chắn, chắc chắn"
+      },
+      {
+        "e": "receive (v)",
+        "n": "/rɪˈsiːv/",
+        "v": "Nhận, được nhận"
+      },
+      {
+        "e": "thus (adv)",
+        "n": "/ðʌs/",
+        "v": "Như vậy, do đó, vì thế"
+      },
+      {
+        "e": "agree (v)",
+        "n": "/əˈɡriː/",
+        "v": "Đồng ý, tán thành"
+      },
+      {
+        "e": "arm (n/v)",
+        "n": "/ɑːrm/",
+        "v": "Cánh tay, vũ khí; trang bị vũ khí"
+      },
+      {
+        "e": "mother (n)",
+        "n": "/ˈmʌðər/",
+        "v": "Mẹ, người mẹ"
+      },
+      {
+        "e": "across (prep/adv)",
+        "n": "/əˈkrɔːs/",
+        "v": "Băng qua, vượt qua; ngang qua"
+      },
+      {
+        "e": "quite (adv)",
+        "n": "/kwaɪt/",
+        "v": "Khá, tương đối"
+      },
+      {
+        "e": "anything (pron)",
+        "n": "/ˈɛnɪˌθɪŋ/",
+        "v": "Bất cứ điều gì, mọi thứ"
+      },
+      {
+        "e": "town (n)",
+        "n": "/taʊn/",
+        "v": "Thị trấn, thị trấn"
+      },
+      {
+        "e": "past (prep/adv/n)",
+        "n": "/pæst/",
+        "v": "Qua, trước; quá khứ"
+      },
+      {
+        "e": "view (n/v)",
+        "n": "/vjuː/",
+        "v": "Quan điểm, quan điểm; xem, nhìn"
+      },
+      {
+        "e": "society (n)",
+        "n": "/səˈsaɪəti/",
+        "v": "Xã hội, xã hội"
+      },
+      {
+        "e": "success (n)",
+        "n": "/səkˈsɛs/",
+        "v": "Thành công"
+      },
+      {
+        "e": "minute (n/adj)",
+        "n": "/ˈmɪnɪt/",
+        "v": "Phút, nhỏ, tế nhị"
+      },
+      {
+        "e": "remember (v)",
+        "n": "/rɪˈmɛmbər/",
+        "v": "Nhớ, ghi nhớ"
+      },
+      {
+        "e": "purpose (n)",
+        "n": "/ˈpɜːrpəs/",
+        "v": "Mục đích, mục tiêu"
+      },
+      {
+        "e": "test (n/v)",
+        "n": "/tɛst/",
+        "v": "Bài kiểm tra, kiểm tra; kiểm tra"
+      },
+      {
+        "e": "fight (v/n)",
+        "n": "/faɪt/",
+        "v": "Chiến đấu, sự chiến đấu"
+      },
+      {
+        "e": "watch (v/n)",
+        "n": "/wɑːtʃ/",
+        "v": "Xem, theo dõi; đồng hồ"
+      },
+      {
+        "e": "situation (n)",
+        "n": "/ˌsɪtjʊˈeɪʃən/",
+        "v": "Tình huống, hoàn cảnh"
+      },
+      {
+        "e": "south (n/adj/adv)",
+        "n": "/saʊθ/",
+        "v": "Nam, phía nam; ở phía nam"
+      },
+      {
+        "e": "outside (adj/adv/prep)",
+        "n": "/ˌaʊtˈsaɪd/",
+        "v": "Bên ngoài, phía ngoài"
+      },
+      {
+        "e": "moment (n)",
+        "n": "/ˈmoʊmənt/",
+        "v": "Lúc, khoảng thời gian ngắn"
+      },
+      {
+        "e": "spirit (n)",
+        "n": "/ˈspɪrɪt/",
+        "v": "Tinh thần, linh hồn"
+      },
+      {
+        "e": "train (n/v)",
+        "n": "/treɪn/",
+        "v": "Tàu hỏa, huấn luyện; huấn luyện"
+      },
+      {
+        "e": "college (n)",
+        "n": "/ˈkɒlɪdʒ/",
+        "v": "Trường đại học, học viện"
+      },
+      {
+        "e": "religion (n)",
+        "n": "/rɪˈlɪdʒən/",
+        "v": "Tôn giáo, tôn giáo"
+      },
+      {
+        "e": "perhaps (adv)",
+        "n": "/pərˈhæps/",
+        "v": "Có lẽ, có thể"
+      },
+      {
+        "e": "music (n)",
+        "n": "/ˈmjuːzɪk/",
+        "v": "Âm nhạc, âm nhạc"
+      },
+      {
+        "e": "grow (v)",
+        "n": "/ɡroʊ/",
+        "v": "Phát triển, lớn lên"
+      },
+      {
+        "e": "free (adj/v)",
+        "n": "/fri/",
+        "v": "Miễn phí, tự do"
+      },
+      {
+        "e": "cause (n/v)",
+        "n": "/kɔːz/",
+        "v": "Nguyên nhân, gây ra; gây ra"
+      },
+      {
+        "e": "manage (v)",
+        "n": "/ˈmænɪdʒ/",
+        "v": "Quản lý, điều hành"
+      },
+      {
+        "e": "answer (n/v)",
+        "n": "/ˈænsər/",
+        "v": "Câu trả lời, trả lời; trả lời"
+      },
+      {
+        "e": "break (v/n)",
+        "n": "/breɪk/",
+        "v": "Phá vỡ, làm vỡ; sự giải lao, giải lao"
+      },
+      {
+        "e": "organize (v)",
+        "n": "/ˈɔːrɡənaɪz/",
+        "v": "Tổ chức, sắp xếp"
+      },
+      {
+        "e": "half (n/adj)",
+        "n": "/hæf/",
+        "v": "Một nửa, nửa"
+      },
+      {
+        "e": "fire (n/v)",
+        "n": "/faɪr/",
+        "v": "Lửa, đám cháy; sa thải, sa thải"
+      },
+      {
+        "e": "lose (v)",
+        "n": "/luːz/",
+        "v": "Mất, mất đi"
+      },
+      {
+        "e": "money (n)",
+        "n": "/ˈmʌni/",
+        "v": "Tiền, tiền bạc"
+      },
+      {
+        "e": "stop (v/n)",
+        "n": "/stɑːp/",
+        "v": "Dừng lại, ngừng lại; sự dừng lại"
+      },
+      {
+        "e": "actual (adj)",
+        "n": "/ˈæktʃuəl/",
+        "v": "Thực tế, thực sự"
+      },
+      {
+        "e": "ago (adv)",
+        "n": "/əˈɡoʊ/",
+        "v": "Trước đây, cách đây"
+      },
+      {
+        "e": "difference (n)",
+        "n": "/ˈdɪfrəns/",
+        "v": "Sự khác biệt, khác biệt"
+      },
+      {
+        "e": "stage (n)",
+        "n": "/steɪdʒ/",
+        "v": "Sân khấu, giai đoạn"
+      },
+      {
+        "e": "father (n)",
+        "n": "/ˈfɑːðər/",
+        "v": "Cha, người cha"
+      },
+      {
+        "e": "table (n)",
+        "n": "/ˈteɪbəl/",
+        "v": "Bàn, cái bàn"
+      },
+      {
+        "e": "rest (n/v)",
+        "n": "/rɛst/",
+        "v": "Nghỉ, sự nghỉ; nghỉ"
+      },
+      {
+        "e": "bear (v/n)",
+        "n": "/bɛr/",
+        "v": "Chịu đựng, cam đoan; con gấu"
+      },
+      {
+        "e": "entire (adj)",
+        "n": "/ɪnˈtaɪər/",
+        "v": "Toàn bộ, toàn diện"
+      },
+      {
+        "e": "market (n)",
+        "n": "/ˈmɑːrkɪt/",
+        "v": "Thị trường, chợ"
+      },
+      {
+        "e": "prepare (v)",
+        "n": "/prɪˈpɛr/",
+        "v": "Chuẩn bị, sắp xếp"
+      },
+      {
+        "e": "serve (v)",
+        "n": "/sɜːrv/",
+        "v": "Phục vụ, betịnh"
+      },
+      {
+        "e": "age (n/v)",
+        "n": "/eɪdʒ/",
+        "v": "Tuổi, thời gian; làm già đi"
+      },
+      {
+        "e": "book (n/v)",
+        "n": "/bʊk/",
+        "v": "Sách, cuốn sách; đặt chỗ, đặt vé"
+      },
+      {
+        "e": "board (n/v)",
+        "n": "/bɔːrd/",
+        "v": "Bảng, bảng; lên tàu, lên máy bay"
+      },
+      {
+        "e": "recent (adj)",
+        "n": "/ˈriːsənt/",
+        "v": "Gần đây, mới đây"
+      },
+      {
+        "e": "sound (n/v)",
+        "n": "/saʊnd/",
+        "v": "Âm thanh, tiếng; phát ra âm thanh"
+      },
+      {
+        "e": "office (n)",
+        "n": "/ˈɔːfɪs/",
+        "v": "Văn phòng"
+      },
+      {
+        "e": "cut (v/n)",
+        "n": "/kʌt/",
+        "v": "Cắt, sự cắt"
+      },
+      {
+        "e": "step (n/v)",
+        "n": "/stɛp/",
+        "v": "Bước chân, bước; bước đi"
+      },
+      {
+        "e": "class (n)",
+        "n": "/klæs/",
+        "v": "Lớp học, lớp; hạng, loại"
+      },
+      {
+        "e": "already (adv)",
+        "n": "/ɔːlˈrɛdi/",
+        "v": "Đã, đã rồi"
+      },
+      {
+        "e": "effort (n)",
+        "n": "/ˈɛfərt/",
+        "v": "Sự cố gắng, nỗ lực"
+      },
+      {
+        "e": "wait (v/n)",
+        "n": "/weɪt/",
+        "v": "Chờ đợi, sự chờ đợi"
+      },
+      {
+        "e": "department (n)",
+        "n": "/dɪˈpɑːrtmənt/",
+        "v": "Bộ phận, phòng ban"
+      },
+      {
+        "e": "able (adj)",
+        "n": "/ˈeɪbl/",
+        "v": "Có khả năng, có năng lực"
+      },
+      {
+        "e": "political (adj)",
+        "n": "/pəˈlɪtɪkl/",
+        "v": "Chính trị, liên quan đến chính trị"
+      },
+      {
+        "e": "learn (v)",
+        "n": "/lɜːrn/",
+        "v": "Học, ¤m hiểu"
+      },
+      {
+        "e": "voice (n/v)",
+        "n": "/vɔɪs/",
+        "v": "Tiếng nói, giọng nói; bày tỏ, diễn đạt"
+      },
+      {
+        "e": "air (n/v)",
+        "n": "/ɛr/",
+        "v": "Không khí, không khí; truyền, phát sóng"
+      },
+      {
+        "e": "together (adv)",
+        "n": "/təˈɡɛðər/",
+        "v": "Cùng nhau, cùng với"
+      },
+      {
+        "e": "explain (v)",
+        "n": "/ɪkˈspleɪn/",
+        "v": "Giải thích, làm rõ"
+      },
+      {
+        "e": "offer (v/n)",
+        "n": "/ˈɔfər/",
+        "v": "Đề nghị, cung cấp; sự đề nghị"
+      },
+      {
+        "e": "plant (n/v)",
+        "n": "/plænt/",
+        "v": "Nhà máy, cây cỏ; trồng, cấy"
+      },
+      {
+        "e": "charge (v/n)",
+        "n": "/ʧɑːrdʒ/",
+        "v": "Tính phí, sự tính phí; sự cáo buộc"
+      },
+      {
+        "e": "ground (n/v)",
+        "n": "/ɡraʊnd/",
+        "v": "Mặt đất, bãi đỗ; đặt lên mặt đất"
+      },
+      {
+        "e": "west (n/adj/adv)",
+        "n": "/wɛst/",
+        "v": "Phía tây, ở phía tây; hướng tây"
+      },
+      {
+        "e": "picture (n/v)",
+        "n": "/ˈpɪktʃər/",
+        "v": "Bức tranh, hình ảnh; chụp, vẽ"
+      },
+      {
+        "e": "hard (adj/adv)",
+        "n": "/hɑːrd/",
+        "v": "Khó, khó khăn; mạnh mẽ, chắc chắn"
+      },
+      {
+        "e": "front (n/adj)",
+        "n": "/frʌnt/",
+        "v": "Mặt trước, phía trước; trước"
+      },
+      {
+        "e": "lie (v)",
+        "n": "/laɪ/",
+        "v": "Nói dối, nằm; sự nói dối"
+      },
+      {
+        "e": "true (adj)",
+        "n": "/truː/",
+        "v": "Đúng, thật; chân thật"
+      },
+      {
+        "e": "history (n)",
+        "n": "/ˈhɪstəri/",
+        "v": "Lịch sử"
+      },
+      {
+        "e": "position (n/v)",
+        "n": "/pəˈzɪʃən/",
+        "v": "Vị trí, tư thế; đặt vào vị trí"
+      },
+      {
+        "e": "above (prep/adv)",
+        "n": "/əˈbəv/",
+        "v": "Phía trên, ở trên"
+      },
+      {
+        "e": "strong (adj)",
+        "n": "/strɔːŋ/",
+        "v": "Mạnh, mạnh mẽ"
+      },
+      {
+        "e": "friend (n)",
+        "n": "/frɛnd/",
+        "v": "Bạn bè"
+      },
+      {
+        "e": "necessary (adj)",
+        "n": "/ˈnɛsəˌsɛri/",
+        "v": "Cần thiết, cần"
+      },
+      {
+        "e": "add (v)",
+        "n": "/æd/",
+        "v": "Thêm vào, cộng thêm"
+      },
+      {
+        "e": "court (n)",
+        "n": "/kɔːrt/",
+        "v": "Tòa án, sân tennis"
+      },
+      {
+        "e": "deal (n/v)",
+        "n": "/diːl/",
+        "v": "Thương lượng, sự giao dịch; giao dịch"
+      },
+      {
+        "e": "shall (modal v)",
+        "n": "/ʃæl/",
+        "v": "Sẽ, sẽ có, sẽ làm"
+      },
+      {
+        "e": "cover (v/n)",
+        "n": "/ˈkʌvər/",
+        "v": "Bao phủ, che phủ; bìa, phủ định"
+      },
+      {
+        "e": "common (adj)",
+        "n": "/ˈkɒmən/",
+        "v": "Phổ biến, thông thường"
+      },
+      {
+        "e": "subject (n/adj)",
+        "n": "/ˈsʌbdʒɛkt/",
+        "v": "Chủ đề, đề tài; dưới quyền"
+      },
+      {
+        "e": "draw (v/n)",
+        "n": "/drɔː/",
+        "v": "Vẽ, rút; sự rút thăm, sự hòa"
+      },
+      {
+        "e": "short (adj/adv)",
+        "n": "/ʃɔːrt/",
+        "v": "Ngắn, ngắn gọn; thấp, thấp hơn"
+      },
+      {
+        "e": "wife (n)",
+        "n": "/waɪf/",
+        "v": "Vợ"
+      },
+      {
+        "e": "treat (v/n)",
+        "n": "/triːt/",
+        "v": "Đối xử, chăm sóc; món ăn, thưởng thức"
+      },
+      {
+        "e": "limit (n/v)",
+        "n": "/ˈlɪmɪt/",
+        "v": "Giới hạn, giới hạn; giới hạn"
+      },
+      {
+        "e": "road (n)",
+        "n": "/roʊd/",
+        "v": "Đường, con đường"
+      },
+      {
+        "e": "modern (adj)",
+        "n": "/ˈmɑːdərn/",
+        "v": "Hiện đại, hiện đại"
+      },
+      {
+        "e": "dark (adj/n)",
+        "n": "/dɑːrk/",
+        "v": "Tối, tối; sự tối tăm, bóng tối"
+      },
+      {
+        "e": "surface (n/v)",
+        "n": "/ˈsɜːrfɪs/",
+        "v": "Bề mặt, mặt; làm cho mặt bên ngoài"
+      },
+      {
+        "e": "rule (n/v)",
+        "n": "/ruːl/",
+        "v": "Quy tắc, nguyên tắc; quy định, cai quản"
+      },
+      {
+        "e": "regard (v/n)",
+        "n": "/rɪˈɡɑːrd/",
+        "v": "Xem xét, coi trọng; sự xem xét, sự coi trọng"
+      },
+      {
+        "e": "dance (v/n)",
+        "n": "/dæns/",
+        "v": "Nhảy múa, khiêu vũ; cuộc nhảy múa, buổi khiêu vũ"
+      },
+      {
+        "e": "peace (n)",
+        "n": "/piːs/",
+        "v": "Hòa bình"
+      },
+      {
+        "e": "observe (v)",
+        "n": "/əbˈzɜːrv/",
+        "v": "Quan sát, theo dõi"
+      },
+      {
+        "e": "future (n/adj)",
+        "n": "/ˈfjʊtʃər/",
+        "v": "Tương lai, tương lai; sắp tới"
+      },
+      {
+        "e": "wall (n)",
+        "n": "/wɔːl/",
+        "v": "Tường, bức tường"
+      },
+      {
+        "e": "tax (n/v)",
+        "n": "/tæks/",
+        "v": "Thuế, đánh thuế; đánh thuế"
+      },
+      {
+        "e": "support (v/n)",
+        "n": "/səˈpɔːrt/",
+        "v": "Hỗ trợ, hỗ trợ; sự hỗ trợ"
+      },
+      {
+        "e": "party (n)",
+        "n": "/ˈpɑːrti/",
+        "v": "Bữa tiệc, bữa tiệc; đảng, đảng phái"
+      },
+      {
+        "e": "whether (conj)",
+        "n": "/ˈwɛðər/",
+        "v": "Có phải là, liệu"
+      },
+      {
+        "e": "either (conj)",
+        "n": "/ˈiːðər/",
+        "v": "Hoặc, hoặc là; một trong hai"
+      },
+      {
+        "e": "land (n/v)",
+        "n": "/lænd/",
+        "v": "Đất đai, đất; đổ bộ, hạ cánh"
+      },
+      {
+        "e": "material (n/adj)",
+        "n": "/məˈtɪriəl/",
+        "v": "Vật liệu, nguyên liệu; vật chất, vật liệu"
+      },
+      {
+        "e": "happen (v)",
+        "n": "/ˈhæpən/",
+        "v": "Xảy ra, xảy ra"
+      },
+      {
+        "e": "education (n)",
+        "n": "/ˌɛdʒʊˈkeɪʃən/",
+        "v": "Giáo dục, sự giáo dục"
+      },
+      {
+        "e": "death (n)",
+        "n": "/dɛθ/",
+        "v": "Sự chết, cái chết"
+      },
+      {
+        "e": "leIer (n)",
+        "n": "/ˈlɛtər/",
+        "v": "Thư, lá thư"
+      },
+      {
+        "e": "color (n/v)",
+        "n": "/ˈkʌlər/",
+        "v": "Màu sắc, màu; tô màu, sắc thái"
+      },
+      {
+        "e": "behind (prep/adv)",
+        "n": "/bɪˈhaɪnd/",
+        "v": "Phía sau, phía sau; đằng sau"
+      },
+      {
+        "e": "produce (v/n)",
+        "n": "/prəˈduːs/",
+        "v": "Sản xuất, sản xuất; sản phẩm, sản phẩm"
+      },
+      {
+        "e": "send (v)",
+        "n": "/sɛnd/",
+        "v": "Gửi đi, gửi đi"
+      },
+      {
+        "e": "term (n)",
+        "n": "/tɜːrm/",
+        "v": "Kỳ học, học kỳ; điều khoản, điều kiện"
+      },
+      {
+        "e": "total (adj/n)",
+        "n": "/ˈtoʊtl/",
+        "v": "Tổng cộng, tổng cộng; tổng số, tổng số"
+      },
+      {
+        "e": "university (n)",
+        "n": "/ˌjuːnəˈvɜːrsəti/",
+        "v": "Đại học, trường đại học"
+      },
+      {
+        "e": "rise (v/n)",
+        "n": "/raɪz/",
+        "v": "Tăng lên, tăng lên; sự tăng lên"
+      },
+      {
+        "e": "century (n)",
+        "n": "/ˈsɛnʧəri/",
+        "v": "Thế kỷ, thế kỷ"
+      },
+      {
+        "e": "farm (n/v)",
+        "n": "/fɑːrm/",
+        "v": "Nông trại, trang trại; làm nông nghiệp"
+      },
+      {
+        "e": "claim (v/n)",
+        "n": "/kleɪm/",
+        "v": "Tuyên bố, yêu sách; sự tuyên bố, sự yêu sách"
+      },
+      {
+        "e": "firm (n/adj)",
+        "n": "/fɜːrm/",
+        "v": "Công ty, doanh nghiệp; vững chắc, vững vàng"
+      },
+      {
+        "e": "operation (n)",
+        "n": "/ˌɑːpəˈreɪʃən/",
+        "v": "Hoạt động, sự hoạt động"
+      },
+      {
+        "e": "further (adj/adv)",
+        "n": "/ˈfɜːrðər/",
+        "v": "Hơn nữa, xa hơn"
+      },
+      {
+        "e": "pressure (n)",
+        "n": "/ˈprɛʃər/",
+        "v": "Áp lực, sức ép"
+      },
+      {
+        "e": "property (n)",
+        "n": "/ˈprɑːpərti/",
+        "v": "Tài sản, bất động sản; tính chất, đặc tính"
+      },
+      {
+        "e": "morning (n)",
+        "n": "/ˈmɔːrnɪŋ/",
+        "v": "Buổi sáng, sáng"
+      },
+      {
+        "e": "amount (n/v)",
+        "n": "/əˈmaʊnt/",
+        "v": "Số lượng, số lượng; lên tới"
+      },
+      {
+        "e": "top (n/adj/v)",
+        "n": "/tɑːp/",
+        "v": "Đầu, đỉnh; hàng đầu, hàng đầu; đặt lên đầu"
+      }
+    ]
+  },
+  {
     "title": "1. Employment (Công việc)",
     "words": [
       {
