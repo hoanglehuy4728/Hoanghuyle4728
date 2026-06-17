@@ -89,7 +89,7 @@
         </div></div>
         <div class="card-slot"><div class="card can-flip" id="card-cur">
           <div class="card-face card-front">
-            <button id="sound-btn" onclick="event.stopPropagation();playAudio()">✨</button>
+            <button id="sound-btn" onclick="event.stopPropagation();playAudio()">💤</button>
             <div class="word" id="cur-en"></div>
             <div class="note" id="cur-n"></div>
             <div class="hint">nhấn để xem nghĩa</div>
@@ -294,9 +294,9 @@ function playAudio(){
     if(!best)best=voices.find(v=>v.lang==='en-US'&&!v.name.toLowerCase().includes('compact'));
     if(!best)best=voices.find(v=>v.lang.startsWith('en'));
     if(best)utt.voice=best;
-    utt.onstart=()=>{btn.textContent='✨';};
-    utt.onend=()=>{btn.textContent='✨';};
-    utt.onerror=()=>{btn.textContent='✨';};
+    utt.onstart=()=>{btn.textContent='💤';};
+    utt.onend=()=>{btn.textContent='💤';};
+    utt.onerror=()=>{btn.textContent='💤';};
     speechSynthesis.speak(utt);
   }
   speechSynthesis.getVoices().length>0?speak():(speechSynthesis.onvoiceschanged=speak);
